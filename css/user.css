@@ -1,40 +1,40 @@
-/*******************************
-	       Global Setting
-********************************/
-
 body{
   background:#FFF;
   margin:0px;
   font-family:"Helvetica","メイリオ";
 }
 
-/*-----------------------------
-	font and text setting
------------------------------*/
-h1,h2,h3,h4,h5,h6{
-  font-weight:400;
-}
 .content{
   margin: 0 1rem;
+}
+.content img{
+	margin:0 auto;
 }
 
 .caption{
   margin: 0 1rem;
 }
 .caption p{
-
   text-indent: 1em;
   margin-bottom:0.3rem;
 }
-
+.caption a{
+  margin-left: 1em;
+  text-decoration: underline;;
+}
 
 /*----------
     Title
  ----------*/
 
+h1.maintitle {
+  font-weight:500;
+  font-size:2.3rem;
+}
+
 h1.bigtitle {
-	font-weight:500;
-	font-size:2.3rem;
+  font-weight:500;
+  font-size:2.3rem;
   margin-bottom: 1.5rem;
   margin-left: 1rem;
 }
@@ -47,33 +47,6 @@ h3.minititle{
   font-weight:400;
 }
 
-
-/*----------
-     hr 
------------*/
-
-hr.white{
-  border: 0;
-  height: 0;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-hr.black{
-  border: 0;
-  height: 0;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-
-/**********************************
-          Content Setting  
- ***********************************/
-
-
 /*-------------------
     Section Page     
  --------------------*/
@@ -85,139 +58,14 @@ hr.black{
 }
 
 #top {
-  margin-top:1rem;
-}
-
-/*--------------
-       FRC 
- ---------------*/ 
-
-#frc.ui.page.grid{
-  color:#ffffff;
-  background-color:rgb(220,100,100);
-  line-height:1.5;
-  text-align:center;
-}
-
-/* Youtube */
-.youtube{
-  margin: 1.5rem 0; 
-  position: relative;
-  padding-bottom:56.25%;
-  padding-top:30px;
-  height:0;
-  overflow:hidden;
-}
-.youtube iframe{
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-}
-
-
-/*------------
-   Sponsors  	
---------------*/
-
-#sponsor.ui.page.grid.relaxed{
-  color:#000;
+  padding-top:1rem;
   background-color:white;
-  line-height:1.5;
-  text-align:center;
-  margin-bottom: 1.5rem;
 }
-
-/* Sposor Images */
-.ui.sponsor-medium.images .image,
-.ui.sponsor-medium.images img,
-.ui.sponsor-medium.image {
-  width: 280px;
-  font-size:0.9rem;
+#about {
+  background-color:#49A5D8;	
 }
-
-/*-------------
-    Special
---------------*/
-#special.ui.page.grid.relaxed{
-  color:#000;
-  background-color:rgb(88, 232, 244);
-  line-height:1.5;
-  text-align:center;
-  padding-bottom: 1.5rem;
+#project {
 }
-
-/* Special Thanks */
-
-.sp.ui.items>.item{
-  min-height:100px;
-  text-align:center;
+#contact {
+	background-color:#00DFFC;
 }
-.sp.ui.items > .item > .content > .header {
-  font-size:x-large;
-  font-weight: 500;
-}
-
-.sp.ui.items > .item > .content > .description a {
- font-size:medium;
- color: black;
-}
-
-/*------------
-    Contact  
- -------------*/
-#info.ui.page.grid.relaxed{
-  color:#000;
-  background-color:#c0c0c0;
-  font-size:large;
-}
-#sociallink.ui.list{
-  margin-left: 1em;
-}
-#sociallink.ui.list > .item{
-  margin-left:0em;
-  padding-left:0em;
-}
-
-
-/*------------------------------*/
-
-h3.right{
-  text-align:justify;
-}
-.nomargin{
-  margin:0.5rem;
-}
-p.bold{
-  font-style:bold;
-}
-/* a */
-a{
-  color:white;
-  text-decoration: underline;
-}
-a.black{
-  color:black;
-  text-decoration: underline;
-}
-a.center{
-  text-align:center;
-  display: inline-block;
-}
-a.icon{
-  text-decoration:none;
-}
-
-.ui.image{
-  margin: 0 auto;
-}
-p.center{
-  text-align:right;
-  vertical-align:center;
-  display:inline-block;
-}
-.menu{
-  top:0px;
-}
-
