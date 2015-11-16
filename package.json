@@ -1,0 +1,22 @@
+{
+  "name": "jrepo-website",
+  "version": "1.0.0",
+  "description": "J-REPO WebSite",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-plumber": "^1.0.1",
+    "gulp-ruby-haml": "^0.0.4",
+    "node-notifier": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/sh4869/jrepo-website.git"
+  },
+  "author": "sh4869",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/sh4869/jrepo-website#readme"
+}
