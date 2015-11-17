@@ -4,8 +4,10 @@
   "description": "J-REPO WebSite",
   "main": "index.js",
   "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-haml": "^0.1.6",
     "gulp-plumber": "^1.0.1",
-    "gulp-ruby-haml": "^0.0.4",
+    "gulp-ruby-haml": "git://github.com/mongorian-chop/gulp-ruby-haml.git#add-encoding-option",
     "node-notifier": "^4.3.1"
   },
   "devDependencies": {},

@@ -19,7 +19,7 @@ gulp.task('haml', function() {
 			});
 		}
 	}))
-	.pipe(haml())
+	.pipe(haml({encodings: "UTF-8"}))
 	.pipe(gulp.dest('./'));
 });
 
