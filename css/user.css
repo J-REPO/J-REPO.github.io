@@ -1,73 +1,88 @@
 body{
-  background:#FFF;
-  margin:0px;
-  font-family:"Helvetica","メイリオ";
+	background:#FFF;
+	margin:0px;
+	font-family:"Helvetica","メイリオ";
 }
 
-.content{
-  margin: 0 1rem;
-}
-.content img{
+img{
 	margin:0 auto;
 }
 
+.contents {
+	margin: 0 1rem;
+}
 .caption{
-  margin: 0 1rem;
+	margin: 0 1rem;
 }
 .caption p{
-  text-indent: 1em;
-  margin-bottom:0.3rem;
+	text-indent: 1em;
+	margin-bottom:0.3rem;
 }
 .caption a{
-  margin-left: 1em;
-  color: black;
-  text-decoration: underline;;
+	margin-left: 1em;
+	color: black;
+	text-decoration: underline;;
 }
-
-/*----------
-    Title
- ----------*/
-
 h1.maintitle {
-  font-weight:500;
-  font-size:2.3rem;
+	font-weight:500;
+	font-size:2.3rem;
 }
 
 h1.bigtitle {
-  font-weight:500;
-  font-size:2.3rem;
-  margin-bottom: 1.5rem;
-  margin-left: 1rem;
+	font-weight:500;
+	font-size:2.3rem;
+	margin-bottom: 1.5rem;
+	margin-left: 1rem;
 }
 h2.title{
-  font-weight:500;
-  margin-top:0.5em;
-  margin-bottom:0.5em;
+	font-weight:500;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
 }
 h3.minititle{
-  font-weight:400;
+	font-weight:400;
 }
 
-/*-------------------
-    Section Page     
- --------------------*/
+h4 {
+	font-weight:400;
+}
+
+hr.white{
+	border: 0;
+	height: 0;
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin: 1.5rem 0;
+}
+
 
 .section.ui.page.grid{
-  color:#042B06;
-  background-color:white ;
-  line-height:1.5;
+	color:#042B06;
+	background-color:white ;
+	line-height:1.5;
 }
 
 #top {
-  padding-top:1rem;
-  background-color: #49A5D8;
+	padding-top:1rem;
+	background-color: white;
 }
 #about {
-  background-color:white;	
+	background-color: #ff6400;	
+	color:black;
 }
 #project {
-  background-color:#00DFFC;
+	background-color:white;
 }
 #contact {
-	
+	background-color:rgb(88,232,244);	
+}
+.content  h3{
+	margin-left:1em;
+	margin-top: 0.3em;
+	margin-bottom: 0em;
+}
+
+.description {
+	margin-left:1.5em;
 }
