@@ -1,7 +1,10 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 body{
 	background:#FFF;
 	margin:0px;
-	font-family:"Helvetica","メイリオ";
+	font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+	background:white;
 }
 
 img{
@@ -24,15 +27,8 @@ img{
 	text-decoration: underline;;
 }
 h1.maintitle {
-	font-weight:500;
+	font-weight:400;
 	font-size:2.3rem;
-}
-
-h1.bigtitle {
-	font-weight:500;
-	font-size:2.3rem;
-	margin-bottom: 1.5rem;
-	margin-left: 1rem;
 }
 h2.title{
 	font-weight:500;
@@ -59,7 +55,7 @@ hr.white{
 
 .section.ui.page.grid{
 	color:#042B06;
-	background-color:white ;
+	background-color:white;
 	line-height:1.5;
 }
 
@@ -68,21 +64,22 @@ hr.white{
 	background-color: white;
 }
 #about {
-	background-color: #ff6400;	
+	padding-top:1.5rem;
+	background-color: orange;
 	color:black;
 }
 #project {
+	padding-top:1.5rem;
 	background-color:white;
 }
 #contact {
-	background-color:rgb(88,232,244);	
+	padding-top:1.5rem;
+	background-color:rgb(10, 180, 255);
 }
 .content  h3{
-	margin-left:1em;
-	margin-top: 0.3em;
 	margin-bottom: 0em;
 }
 
-.description {
-	margin-left:1.5em;
+.menu{
+  top:0px;
 }

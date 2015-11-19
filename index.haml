@@ -7,22 +7,46 @@
     %meta{:content => "width=device-width,initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
     %title J-REPO - Japan Robotics Education Promotion
     / Site Properities
-    %meta{:content => "FRC,Tokyo Technical Samurai,", :name => "keywords"}/
+    %meta{:content => "FRC,日本ロボット教育推進機構,J-REPO", :name => "keywords"}/
     %meta{:content => "Kasai Nobuhiro,sh4869(sh4869.net)", :name => "author"}/
-    %meta{:content => "First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。", :name => "description"}/
+    %meta{:content => "日本ロボット教育推進機構公式サイト", :name => "description"}/
     %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/user.css", :rel => "stylesheet", :type => "text/css"}
     %script{:src => "//code.jquery.com/jquery-1.11.0.min.js"}
     %script{:src => "js/semantic.js"}
+    :javascript
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
   %body
+    .ui.fluid.black.four.item.inverted.small.fixed.menu
+      %a.item{:href => "#top"}
+        %i.up.arrow.icon
+        Top
+      %a.item{:href => "#about"}
+        %i.users.icon
+        about
+      %a.item{:href => "#project"}
+        %i.trophy.icon
+        Product
+      %a.item{:href => "#contact"}
+        %i.building.icon
+        Contact
     #top.section.ui.page.grid
-      .row
+      .white.row
         .sixteen.wide.column
-          %img.ui.large.image{:src => "img/logo.png"}
+          %img.ui.image{:src => "img/logo.png"}
     #about.section.ui.page.grid
       .row
         .sixteen.wide.column
-          %h1.maintittle 日本ロボット教育推進機構
+          %h1.maintitle 日本ロボット教育推進機構
           .contents
             %h3.minititle J-REPO - Japan Robotics Education Promotion Organization
           %hr.white
@@ -30,36 +54,63 @@
           .contents
             %h3.minititle 日本ロボット教育推進機構とは?
             .caption
-              %p 私は将来せっかくこの評価めという事のうちにぶつかっませでし。時々十月に変化らはとうとうその推測ですですでもに探しば行くますがも尊敬見るませんから、ちょっとにも考えるますななある。考が行かませ事ももう十月をさぞですましあり。まるで大森さんに存在坊ちゃん実際沙汰に破るた中学この時代私か腐敗をというお真似ますですであって、この十一月はそれか教授道に出さて、向さんののが個性のみんなに近頃実矛盾として私党派よりご真似のしようについにご意味にしたですて、ほぼもっとも所有でいうでて来でものを致すなん。またすなわちお学校にし事はそれだけ安泰と打ち明けでて、その国家よりもおくたてについて否やになりで得るですた。
-            %h3.minititle 理念
-            .caption
-              %p 私は将来せっかくこの評価めという事のうちにぶつかっませでし。時々十月に変化らはとうとうその推測ですですでもに探しば行くますがも尊敬見るませんから、ちょっとにも考えるますななある。考が行かませ事ももう十月をさぞですましあり。まるで大森さんに存在坊ちゃん実際沙汰に破るた中学この時代私か腐敗をというお真似ますですであって、この十一月はそれか教授道に出さて、向さんののが個性のみんなに近頃実矛盾として私党派よりご真似のしようについにご意味にしたですて、ほぼもっとも所有でいうでて来でものを致すなん。またすなわちお学校にし事はそれだけ安泰と打ち明けでて、その国家よりもおくたてについて否やになりで得るですた。
+              %p
+                一般社団法人 日本ロボット教育推進機構(英名：Japan Robotics Education Promotional Organization、略称：J-REPO)は、米国のロボット競技会 FRC2015 に参加した”Tokyo Technical Samurai”の一期生である江口壮哉を代表理事とし、同じく一期生である大西祐輝、原田英将を理事として平成27年11月4日に設立された非営利型の一般社団法人です。
+              %p
+                当法人は日本国内において、中高生を対象とした、ロボット教育を始めとする技術的な教育の普及に寄与することを目的としています。
     #project.section.ui.page.grid
       .row
         .sixteen.wide.column
-          %h2.title Project
+          %h2.title Product
           .contents
             %h3.minititle
-              Tokyo Technical Samurai
+              ロボット競技会(FRC)の広告及び普及活動
+            .caption
+              %p
+                FRC(正式名称：FIRST Robotics Competition)は米国のNPO法人FIRSTが開催している、高校生のための国際的なロボット競技会です。当法人がこの大会を推薦する理由としましては、
+              %p
+                ・ロボットの規格が大きく高校生にとって貴重な体験である
+              %p
+                ・ロボットを製作するだけに留まらず資金集めや広報といった活動が必須になるため、技術者になるための幅広いスキルを習得できる
+              %p
+                といったものが挙げられます。
+            %h3.minititle
+              FRC参加チームの支援
+            .caption
+              %p
+                FRCへの日本からの参加には様々な壁があり、決して容易ではありません。それでも、１人でも多くの日本の高校生がこの大会へ参加して、多くのことを学んでほしい。そんな願いから当法人は、FRCへの参加を希望する高校生を応援して参ります。
             %img.ui.large.image{:src => "img/tts.png"}
             .caption
-              %p 私は将来せっかくこの評価めという事のうちにぶつかっませでし。時々十月に変化らはとうとうその推測ですですでもに探しば行くますがも尊敬見るませんから、ちょっとにも考えるますななある
+              %p
+                また今年度の事業の一環として、第二期”Tokyo Technical Samurai”をモデルチームとして採用し、FRC2016への参加に対する支援を行って参ります。
               %a{:href => "http://tokyotechnicalsamurai.ml",:target => "_blank"} Tokyo Technical Samurai 公式ホームページ
+            %h3.minititle
+              中学生及び高校生に対するロボット教育の推進
+            .caption
+              %p
+                決してFRCへの参加支援だけが当法人の掲げる教育活動ではありません。中高生を対象とした工作教室や講演会などを、企業の皆様と協力しながら企画していきたいと考えております。
     #contact.section.ui.page.grid
       .row
         .sixteen.wide.column
           %h2.title Contact
           .contents
-            .ul.list
+            %ul.ui.horizontal.list
               .item
                 %i.large.mail.icon
                 .content
-                  %h3.minititle メールアドレス 
-                  .description jrepo.tech.org☆gmail.com ☆→@ 
+                  .header メールアドレス
+                  .description jrepo.tech.org☆gmail.com ☆→@
               .item
                 %i.large.map.icon
                 .content
-                  %h3.minititle
+                  .header
                     所在地
                   .description
                     〒332-0031 埼玉県川口市青木2-2-43
+              .item
+                %i.large.user.icon
+                .content
+                  .header
+                    代表理事
+                  .description
+                    江口壮哉
