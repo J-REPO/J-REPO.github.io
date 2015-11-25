@@ -5,9 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.0",
-    "gulp-haml": "^0.1.6",
     "gulp-plumber": "^1.0.1",
-    "gulp-ruby-haml": "git://github.com/mongorian-chop/gulp-ruby-haml.git#add-encoding-option",
+    "gulp-ruby-haml": "^0.0.5",
     "node-notifier": "^4.3.1"
   },
   "devDependencies": {},
@@ -16,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/sh4869/jrepo-website.git"
+    "url": "https://github.com/J-REPO/J-REPO.github.io"
   },
   "author": "sh4869",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/sh4869/jrepo-website#readme"
+  "homepage": "https://github.com/J-REPO/J-REPO.github.io/wiki"
 }

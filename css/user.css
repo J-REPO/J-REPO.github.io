@@ -1,5 +1,10 @@
+/* Author: sh4869 */
+/* import webfont */
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+/******************/
+/* Global Setting */
+/******************/
 body{
 	background:#FFF;
 	margin:0px;
@@ -7,28 +12,25 @@ body{
 	background:white;
 }
 
+/* Tag Setting */
+
 img{
 	margin:0 auto;
 }
 
-.contents {
-	margin: 0 1rem;
+hr{
+	border: 0;
+	height: 0;
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	margin: 1.5rem 0;
 }
-.caption{
-	margin: 0 1rem;
-}
-.caption p{
-	text-indent: 1em;
-	margin-bottom:0.3rem;
-}
-.caption a{
-	margin-left: 1em;
-	color: black;
-	text-decoration: underline;;
-}
+/* Title Tag Setting */
 h1.maintitle {
 	font-weight:400;
 	font-size:2.3rem;
+	margin-top:0.5em;
 }
 h2.title{
 	font-weight:500;
@@ -39,48 +41,41 @@ h3.minititle{
 	font-weight:400;
 }
 
-h4 {
-	font-weight:400;
+/* Content Class */
+.contents {
+	margin: 0 1rem;
+}
+/* Caption Class */
+.caption{
+	margin: 0 1rem;
+}
+.caption p{
+	text-indent: 1em;
+	margin:0.2rem 0rem;
+}
+.caption a{
+	color: black;
+	text-decoration: underline;;
 }
 
-hr.white{
-	border: 0;
-	height: 0;
-	width: 100%;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-	margin: 1.5rem 0;
-}
-
-
+/* section page setting */
 .section.ui.page.grid{
+	padding-top:1.5rem;
 	color:#042B06;
-	background-color:white;
 	line-height:1.5;
 }
-
 #top {
-	padding-top:1rem;
 	background-color: white;
 }
 #about {
-	padding-top:1.5rem;
 	background-color: orange;
 	color:black;
 }
 #project {
-	padding-top:1.5rem;
 	background-color:white;
 }
 #contact {
-	padding-top:1.5rem;
 	background-color:rgb(10, 180, 255);
 	color:black;
-}
-.content  h3{
-	margin-bottom: 0em;
-}
-
-.menu{
-  top:0px;
+	padding-bottom: 2.0rem;
 }
