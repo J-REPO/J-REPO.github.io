@@ -1,6 +1,7 @@
 !!!
 %html{:lang => "ja"}
   %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     / Standard Meta
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
@@ -10,8 +11,28 @@
     %meta{:content => "FRC,日本ロボット教育推進機構,J-REPO", :name => "keywords"}/
     %meta{:content => "Kasai Nobuhiro,sh4869(sh4869.net)", :name => "author"}/
     %meta{:content => "日本ロボット教育推進機構公式サイト", :name => "description"}/
+    %link{:href => "/favicons/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
+    %link{:href => "/favicons/apple-touch-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
+    %link{:href => "/favicons/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "/favicons/apple-touch-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+    %link{:href => "/favicons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+    %link{:href => "/favicons/apple-touch-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+    %link{:href => "/favicons/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}/
+    %link{:href => "/favicons/apple-touch-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
+    %link{:href => "/favicons/apple-touch-icon-180x180.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
+    %link{:href => "/favicons/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "/favicons/android-chrome-192x192.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %link{:href => "/favicons/manifest.json", :rel => "manifest"}/
+    %link{:color => "#5bbad5", :href => "/favicons/safari-pinned-tab.svg", :rel => "mask-icon"}/
+    %link{:href => "/favicons/favicon.ico", :rel => "shortcut icon"}/
+    %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
+    %meta{:content => "/favicons/mstile-144x144.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "/favicons/browserconfig.xml", :name => "msapplication-config"}/
+    %meta{:content => "#ffffff", :name => "theme-color"}/
     %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "css/user.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "css/user.css", :rel => "stylesheet", :type => "text/css"}/
     %script{:src => "//code.jquery.com/jquery-1.11.0.min.js"}
     %script{:src => "js/semantic.js"}
     :javascript
@@ -48,14 +69,14 @@
     #top.section.ui.page.grid
       .white.row
         .sixteen.wide.column
-          %img.ui.image{:src => "img/logo.png"}
+          %img.ui.image{:src => "img/logo.png"}/
     #about.section.ui.page.grid
       .row
         .sixteen.wide.column
           %h1.maintitle 日本ロボット教育推進機構
           .contents
             %h3.minititle J-REPO - Japan Robotics Education Promotional Organization
-          %hr
+          %hr/
           %h2.title About
           .contents
             %h3.minititle 日本ロボット教育推進機構とは?
@@ -103,11 +124,11 @@
             .caption
               %p
                 FRCへの日本からの参加には様々な壁があり、決して容易ではありません。それでも、１人でも多くの日本の高校生がこの大会へ参加して、多くのことを学んでほしい。そんな願いから当法人は、FRCへの参加を希望する高校生を応援して参ります。
-            %img.ui.large.image{:src => "img/tts.png"}
+            %img.ui.large.image{:src => "img/tts.png"}/
             .caption
               %p
                 また今年度の事業の一環として、第二期”Tokyo Technical Samurai”をモデルチームとして採用し、FRC2016への参加に対する支援を行って参ります。
-              %a{:href => "http://tokyotechnicalsamurai.ml",:target => "_blank"}
+              %a{:href => "http://tokyotechnicalsamurai.ml", :target => "_blank"}
                 %p Tokyo Technical Samurai 公式ホームページ
             %h3.minititle
               中学生及び高校生に対するロボット教育の推進
