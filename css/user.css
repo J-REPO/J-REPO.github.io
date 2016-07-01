@@ -43,7 +43,12 @@ h2.title{
 h3.minititle{
 	font-weight:400;
 }
-
+h4.minititle {
+	font-size:1.15rem;
+	font-weight: 400;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
 /* Content Class */
 .contents {
 	margin: 0 1rem;
@@ -75,7 +80,7 @@ h3.minititle{
 	background-color: white;
 }
 #about {
-	background-color: rgba(255,165,20,0.8);
+	background-color: #42e468;
 	color:black;
 }
 #project {
