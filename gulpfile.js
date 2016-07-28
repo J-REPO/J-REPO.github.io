@@ -6,7 +6,7 @@ var notifier = require('node-notifier');
 // hamlタスク設定
 gulp.task('haml', function() {
 	taskname = this.seq.slice(-1)[0]
-	gulp.src('./*.haml')
+	gulp.src(['./*/*.haml','./*.haml'],{base:'./'})
 	.pipe(plumber({
 		errorHandler: function(error) {
 			var title = '[task]' + taskname + ' ' + error.plugin;
@@ -25,7 +25,7 @@ gulp.task('haml', function() {
 
 // 監視設定
 gulp.task('watch',function(){
-	gulp.watch('./**/*.haml',['haml']);
+	gulp.watch(['./*/*.haml','./*.haml'],['haml']);
 });
 
 // 項目追加
