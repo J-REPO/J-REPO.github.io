@@ -1,0 +1,171 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    / Standard Meta
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width,initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
+    %title J-REPO - Japan Robotics Education Promotion Organization
+    / Site Properities
+    %meta{:content => "FRC,Japan Robotics Education Promotion Organization,J-REPO", :name => "keywords"}/
+    %meta{:content => "J-REPO,Kasai Nobuhiro,sh4869(sh4869.net)", :name => "author"}/
+    %meta{:content => "Japan Robotics Education Promotion Organization Official Web Page", :name => "description"}/
+    / OGP
+    %meta{:content => "J-REPO - Japan Robotics Education Promotion Organization", :property => "og:title"}
+    %meta{:content => "website", :property => "og:type"}
+    %meta{:content => "http://j-repo.com", :property => "og:url"}
+    %meta{:contnet => "http://j-repo.com/img/jrepo-logo-minimum.png", :property => "og:image"}
+    %meta{:content => "Japan Robotics Education Promotion Organization Official Web Page.", :property => "og:description"}
+    / Twitter Card
+    %meta{:content => "summary", :name => "twitter:card"}
+    %meta{:content => "@jrepo_official", :name => "twitter:site"}
+    %meta{:content => "J-REPO Japan Robotics Education Promotion Organization", :name => "twitter:title"}
+    %meta{:content => "http://j-repo.com/img/jrepo-logo-minimum.png", :name => "twitter:image"}
+    %meta{:content => "Japan Robotics Education Promotion Organization Official Web Page.", :name => "twitter:description"}
+    / Favicons
+    %link{:href => "/favicons/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
+    %link{:href => "/favicons/apple-touch-icon-60x60.png", :rel => "apple-touch-icon", :sizes => "60x60"}/
+    %link{:href => "/favicons/apple-touch-icon-72x72.png", :rel => "apple-touch-icon", :sizes => "72x72"}/
+    %link{:href => "/favicons/apple-touch-icon-76x76.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+    %link{:href => "/favicons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
+    %link{:href => "/favicons/apple-touch-icon-120x120.png", :rel => "apple-touch-icon", :sizes => "120x120"}/
+    %link{:href => "/favicons/apple-touch-icon-144x144.png", :rel => "apple-touch-icon", :sizes => "144x144"}/
+    %link{:href => "/favicons/apple-touch-icon-152x152.png", :rel => "apple-touch-icon", :sizes => "152x152"}/
+    %link{:href => "/favicons/apple-touch-icon-180x180.png", :rel => "apple-touch-icon", :sizes => "180x180"}/
+    %link{:href => "/favicons/favicon-32x32.png", :rel => "icon", :sizes => "32x32", :type => "image/png"}/
+    %link{:href => "/favicons/android-chrome-192x192.png", :rel => "icon", :sizes => "192x192", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-96x96.png", :rel => "icon", :sizes => "96x96", :type => "image/png"}/
+    %link{:href => "/favicons/favicon-16x16.png", :rel => "icon", :sizes => "16x16", :type => "image/png"}/
+    %link{:href => "/favicons/manifest.json", :rel => "manifest"}/
+    %link{:color => "#5bbad5", :href => "/favicons/safari-pinned-tab.svg", :rel => "mask-icon"}/
+    %link{:href => "/favicons/favicon.ico", :rel => "shortcut icon"}/
+    %meta{:content => "#ffffff", :name => "msapplication-TileColor"}/
+    %meta{:content => "/favicons/mstile-144x144.png", :name => "msapplication-TileImage"}/
+    %meta{:content => "/favicons/browserconfig.xml", :name => "msapplication-config"}/
+    %meta{:content => "#ffffff", :name => "theme-color"}/
+    / CSS and JavaScirpt
+    %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/user.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "//code.jquery.com/jquery-1.11.0.min.js"}
+    %script{:src => "js/semantic.js"}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
+      ga('create', 'UA-46319605-13', 'auto');
+      ga('send', 'pageview');
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+  %body
+    .ui.fluid.black.four.item.inverted.small.fixed.menu
+      %a.item{:href => "#top"}
+        %i.up.arrow.icon
+        Top
+      %a.item{:href => "#about"}
+        %i.users.icon
+        about
+      %a.item{:href => "#project"}
+        %i.trophy.icon
+        Product
+      %a.item{:href => "#contact"}
+        %i.info.icon
+        Contact
+    #top.section.ui.page.grid
+      .white.row
+        .sixteen.wide.column
+          %img.ui.image{:src => "img/jrepo-logo.png"}/
+    #about.section.ui.page.grid
+      .row
+        .sixteen.wide.column
+          %h1.maintitle.english J-REPO -  Japan Robotics Education Promotional Organization
+          %hr/
+          %h2.title About
+          .contents
+            %h3.minititle What is J-REPO?
+            .caption
+              %p
+                J-REPO, Japan Robotics Education Promotional Organization, is the non-profit organization which promotes STEM educations in Japan.  Soya Eguchi, one of the first members of FRC Team #5749, founded this organization on November 4th, 2015 in order to tell teenagers how fun making robot is.  Now, J-REPO consists of 9 students who have enthusiasm to change Japan’s educational system for the future.
+              %p
+                Some of J-REPO members are alumni of FRC team #5749, 
+                %a{:href => "http://tokyotechnicalsamurai.ml"} "Tokyo Technical Samurai," 
+                and #5749,  
+                %a{:href => "http://indigoninjas.com"} "Indigo Ninjas."  
+                These two teams challenged FRC firstly from Japan in 2015.  We will never stop challenging.
+            %h3.minititle Belief
+            .caption
+              %p
+                We remove any barriers to give all teenagers chances to learn technical things.  Bringing up young engineers and managers is essential for industry-wide developments.
+            %h3.minititle President's Massage
+            .caption
+              %p
+                Held in America, the FIRST Robotics Competition invites high school students from all over the world to compete with their robotic creations in what they call the 'ultimate sport for the mind'. I competed myself, back in 2015.
+              %p
+                There's one catch, though. In the FIRST Robotics Competition, or FRC for short, teams are also responsible for gathering the funds necessary from sponsors. Take teams entering from Japan, for example; they would usually require around 2 million to 4 million yen. The true challenge, and the uniqueness of this particular competition lies there in the fund-raising.
+              %p
+                That's not the only obstacle that teams face. Teams without the support of an educational institution or another type of regional body are disqualified from the FRC. Uncontrollable environmental factors such as this squander opportunity and waste potential. It was with this in mind that I established the Japan Robotics Education Promotional Organization, to work towards a kind of environment that eliminates barriers and offers equal educational opportunities to high school students all over Japan.
+              %p
+                The FRC is the future of education, and I believe it's time Japan found out. Project-based education demands a vast range of skills, like planning and fund-raising, that are 
+                indispensible for future entrepreneurs. The experience gained from such an education not only provides students with a clearer picture of their future, but also paves the path to so many more possibilities. And one glance at all the diverse ways that university admission offices search for prospective students will tell you that it's no longer enough to remember what you learned in the classroom. The skills acquired by participating in the FRC are what's sought after today, and what the great leaders of tomorrow are expected to possess.
+              %p 
+                Here at J-REPO, we aim to foster skills in both the technological department and in practical application. Here, we realize the importance of having not only the technical ability to achieve specific goals but the social ability needed to fully utilize the former, and we strive to cultivate both in young minds. How so? Hosting a preliminary trial for the FRC in Japan could be the first step. Thank you for your ongoing support for J-REPO. 
+              %p.right
+                July 2016 Japan Robotics Education Promotional Organization
+              %p.right
+                President  Soya Eguchi
+    #project.section.ui.page.grid
+      .row
+        .sixteen.wide.column
+          %h2.title Product
+          .contents
+            %h3.minititle
+              %a{:href => "http://www.firstinspires.org/robotics/frc"} Promote FIRST® Robotics Competition
+            .caption
+              %p
+                FRC is  an international robotics competition held by 
+                %a{:href => "http://www.firstinspires.org"} FIRST® . 
+                Participation in FRC makes great experiences for high school students.  They can learn not only engineering but also English, management, publicity and negotiation with companies.  Though FRC is great program, it is not known Japan.
+            %h3.minititle
+              Support FRC Teams
+            .caption
+              %p
+                Challenging FRC from Japan is not easy.  However, we hope more students experience it.  So we he students who want to participate FRC.  We also help students and schools to found a FRC team.
+            %h3.minititle
+              Develop STEM Education for Middle and High-school Students
+            .caption
+              %p
+                Most of Japanese teenagers don’t have a chance to touch the sci-tech culture.  We plan events with an administration or a company to give them the chance.
+    #contact.section.ui.page.grid
+      .row
+        .sixteen.wide.column
+          %h2.title Contact
+          .contents
+            %ul.ui.horizontal.list
+              .item
+                %i.large.mail.icon
+                .content
+                  .header Mail
+                  .description info☆j-repo.com ☆→@
+              .item
+                %i.large.map.icon
+                .content
+                  .header
+                    Address
+                  .description
+                    2-2-43, Aoki, Kawaguchi-shi, Saitama, 332-0031, Japan
+              .item
+                %i.large.user.icon
+                .content
+                  .header
+                    President
+                  .description
+                    Soya Eguchi

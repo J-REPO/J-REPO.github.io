@@ -35,6 +35,11 @@ h1.maintitle {
 	font-size:2.3rem;
 	margin-top:0.5em;
 }
+h1.maintitle.english {
+	font-weight:400;
+	font-size:2.0rem;
+	margin-top:0.5em;
+}
 h2.title{
 	font-weight:500;
 	margin-top:0.5em;
