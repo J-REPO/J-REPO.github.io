@@ -96,3 +96,8 @@ h4.minititle {
 	color:black;
 	padding-bottom: 2.0rem;
 }
+
+/* translate menu background */
+.translate-menu {
+	background-color: #c35959 !important;
+}
