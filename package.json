@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "J-REPO WebSite",
   "main": "index.js",
-  "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-ruby-haml": "^0.0.5",
-    "node-notifier": "^4.3.1"
+  "local-web-server": {
+    "port": 8100,
+    "forbid": "*.json"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-ruby-haml": "0.0.5",
+    "local-web-server": "^1.2.6",
+    "node-notifier": "^4.6.0",
+    "npm-run-all": "^2.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:gulp": "gulp watch",
+    "watch:server": "ws",
+    "start": "npm-run-all -p watch:*"
   },
   "repository": {
     "type": "git",

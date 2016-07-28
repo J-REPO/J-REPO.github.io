@@ -25,7 +25,7 @@ gulp.task('haml', function() {
 
 // 監視設定
 gulp.task('watch',function(){
-	gulp.watch('./*.haml',['haml']);
+	gulp.watch('./**/*.haml',['haml']);
 });
 
 // 項目追加
