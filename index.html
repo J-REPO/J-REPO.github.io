@@ -57,25 +57,25 @@
       ga('create', 'UA-46319605-13', 'auto');
       ga('send', 'pageview');
       $(function(){
-      $('a[href^=#]').click(function(){
-      var speed = 1000;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-      $("html, body").animate({scrollTop:position}, speed, "swing");
-      return false;
-      });
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
       });
     </script>
   </head>
   <body>
-    <div class="ui fluid five item inverted small fixed menu"><a href="#top" class="item"><i class="up arrow icon"></i>        Top</a><a href="#about" class="item"><i class="users icon"></i>        about</a><a href="#project" class="item"><i class="trophy icon"></i>        Product</a><a href="#contact" class="item"><i class="info icon"></i>        Contact</a><a href="/en" class="item translate-menu"><i class="translate icon"></i>        English</a></div>
-    <div id="top" class="section ui page grid">
+    <div class="ui fluid five item inverted small fixed menu"><a class="item" href="#top"><i class="up arrow icon"></i>        Top</a><a class="item" href="#about"><i class="users icon"></i>        about</a><a class="item" href="#project"><i class="trophy icon"></i>        Product</a><a class="item" href="#contact"><i class="info icon"></i>        Contact</a><a class="item translate-menu" href="/en"><i class="translate icon"></i>        English</a></div>
+    <div class="section ui page grid" id="top">
       <div class="white row">
-        <div class="sixteen wide column"><img src="img/jrepo-logo.png" class="ui image"/></div>
+        <div class="sixteen wide column"><img class="ui image" src="img/jrepo-logo.png"/></div>
       </div>
     </div>
-    <div id="about" class="section ui page grid">
+    <div class="section ui page grid" id="about">
       <div class="row">
         <div class="sixteen wide column">
           <h1 class="maintitle">日本ロボット教育推進機構</h1>
@@ -107,7 +107,7 @@
         </div>
       </div>
     </div>
-    <div id="project" class="section ui page grid">
+    <div class="section ui page grid" id="project">
       <div class="row">
         <div class="sixteen wide column">
           <h2 class="title">Product</h2>
@@ -122,7 +122,7 @@
             <h3 class="minititle">FRC参加チームの支援</h3>
             <div class="caption">
               <p>FRCへの日本からの参加には様々な壁があり、決して容易ではありません。それでも、１人でも多くの日本の高校生がこの大会へ参加して、多くのことを学んでほしい。そんな願いから当法人は、FRCへの参加を希望する高校生を応援して参ります。</p>
-            </div><img src="img/tts.png" class="ui large image"/>
+            </div><img class="ui large image" src="img/tts.png"/>
             <div class="caption">
               <p>また今年度の事業の一環として、第二期”Tokyo Technical Samurai”をモデルチームとして採用し、FRC2016への参加に対する支援を行って参ります。</p><a href="http://tokyotechnicalsamurai.ml" target="_blank">
                 <p>Tokyo Technical Samurai 公式ホームページ</p></a>
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="section ui page grid">
+    <div class="section ui page grid" id="contact">
       <div class="row">
         <div class="sixteen wide column">
           <h2 class="title">Contact</h2>
