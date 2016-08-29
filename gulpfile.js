@@ -2,11 +2,13 @@ var gulp = require('gulp');
 var pug = require('gulp-pug');
 var plumber = require('gulp-plumber');
 var notifier = require('node-notifier');
+var data = require('gulp-data');
+var fs = require('fs');
 
 // hamlタスク設定
 gulp.task('pug', function() {
-	taskname = this.seq.slice(-1)[0]
-	gulp.src(['./*/*.pug','./*.pug'],{base:'./'})
+	taskname = this.seq.slice(-1)[0];
+	gulp.src(['./*.pug','./en/*.pug'],{base:'./'})
 	.pipe(plumber({
 		errorHandler: function(error) {
 			var title = '[task]' + taskname + ' ' + error.plugin;
@@ -18,6 +20,15 @@ gulp.task('pug', function() {
 				time: 3000
 			});
 		}
+	}))
+	.pipe(data(function(file){
+		var dirname = "./json/";
+		var files = fs.readdirSync(dirname);
+		var json = {};
+		files.forEach(function(filename){
+			json[filename.replace(".json","")] = JSON.parse(fs.readFileSync(dirname + filename));
+		});
+		return {data:json};
 	}))
 	.pipe(pug({pretty: true}))
 	.pipe(gulp.dest('./'));
