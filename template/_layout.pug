@@ -18,9 +18,11 @@ html(lang='ja')
         // Favcion
         include ./link/_favicon.pug
         // CSS
-        include ./link/_css.pug
+        block css
+          include ./link/_css
         // JS
-        include ./script/_js
+        block js
+          include ./script/_js
         // Analytics
         block script
           include ./script/_analytics
