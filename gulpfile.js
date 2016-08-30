@@ -8,7 +8,7 @@ var fs = require('fs');
 // hamlタスク設定
 gulp.task('pug', function() {
 	taskname = this.seq.slice(-1)[0];
-	gulp.src(['./*.pug','./en/*.pug'],{base:'./'})
+	gulp.src(['./*.pug','./en/*.pug','./newui/*.pug'],{base:'./'})
 	.pipe(plumber({
 		errorHandler: function(error) {
 			var title = '[task]' + taskname + ' ' + error.plugin;
