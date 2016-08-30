@@ -101,3 +101,9 @@ h4.minititle {
 .translate-menu {
 	background-color: #c35959 !important;
 }
+
+/* Global Class Setting*/
+/* 各sectionの中のメインコンテンツ*/
+.main {
+	margin: 1%;
+}
