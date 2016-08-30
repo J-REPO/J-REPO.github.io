@@ -1,0 +1,26 @@
+/* Top Component CSS*/
+/* 全体 */
+#top {
+	padding: 1%;
+}
+
+/*説明文・ボタンが配置される */
+#top_caption {
+  text-align: center;
+}
+/* ボタンの周りに空白を設ける */
+#top_caption_button {
+    margin-top: 1%;
+}
+/* キャプションのサイズは画面の大きさで変える。*/
+@media(min-width: 768px) {
+	#top_caption_text {
+		font-size:18px;
+	}
+}
+
+@media(max-width: 768px) {
+	#top_caption_text {
+        text-align:left;
+	}
+}
