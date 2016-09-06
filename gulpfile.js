@@ -36,7 +36,7 @@ gulp.task('pug', function() {
 
 // 監視設定
 gulp.task('watch',function(){
-	gulp.watch(['./*/*.pug','./*.pug','./json/*.json'],['pug']);
+	gulp.watch(['./*/*.pug','./newui/**/*.pug','./*.pug','./json/*.json'],['pug']);
 });
 
 // 項目追加
