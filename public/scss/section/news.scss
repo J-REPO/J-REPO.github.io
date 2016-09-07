@@ -7,55 +7,50 @@
   h1.title {
     color: #091e6f;
   }
-}
-
-ul.articles {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/* 記事紹介コンポーネント全体の設定*/
-
-.article {
-  background: #80dbfd;
-  border: 3px solid #E5E5E5;
-  border: none;
-  border-radius: 10px;
-}
-
-/* ニュースの埋め込み画像の最大値 
+  ul.articles {
+    /*記事上のDOM */
+    width: 90%;
+    margin: 0 auto;
+  }
+  .article {
+    /* 記事紹介コンポーネント全体の設定*/
+    background: #80dbfd;
+    border: 3px solid #E5E5E5;
+    border: none;
+    border-radius: 10px;
+    
+    img.article_thumbnail {
+      
+    /* ニュースの埋め込み画像の最大値 
    大体この大きさを目安にサムネイルを作りたい */
+      border-radius: 6px;
+      max-width: 100%;
+      max-height: 100%;
+    }
 
-img.article_thumbnail {
-  border-radius: 6px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* 説明のmarginを指定する */
-
-.article_caption {
-  .description {
-    margin: 10px 0 10px 0;
+    .article_caption {
+      /* 説明のmarginを指定する */
+      .description {
+        margin: 10px 0 10px 0;
+      }
+      hr {
+        margin: 0.5rem;
+      }
+    }  
   }
 
-  hr {
-    margin: 0.5rem;
-  }
-}
-
-/* slide navigation button */
-
-#news .uk-slidenav.uk-slidenav-contrast {
-  &.uk-slidenav-next {
-    color: #fff;
-    right: 5%;
-    top: 30%;
-  }
-
-  &.uk-slidenav-previous {
-    color: #fff;
-    left: 5%;
-    top: 30%;
+  .uk-slidenav.uk-slidenav-contrast {
+    &.uk-slidenav-next {
+      /* Slide nav button right*/
+      color: #fff;
+      right: 5%;
+      top: 30%;
+    }
+    &.uk-slidenav-previous {
+      /* Slide nav button left*/
+      color: #fff;
+      left: 5%;
+      top: 30%;
+    }
   }
 }
