@@ -7,15 +7,15 @@
 #top {
   padding: 1%;
   
-  #top_caption {
+  .top_caption {
     /*説明文・ボタンが配置される */
     text-align: center;
 
-    #top_caption_button {
+    .top_caption_button {
       /* ボタンの周りに空白を設ける */
       margin-top: 1%;
     }
-    #top_caption_text {
+    .top_caption_text {
       font-size: 4.375vw;
       @media screen and (min-width: $criteria_width){
         font-size: 18px;

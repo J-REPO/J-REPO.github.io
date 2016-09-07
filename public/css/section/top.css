@@ -7,22 +7,22 @@
   padding: 1%;
 }
 
-#top #top_caption {
+#top .top_caption {
   /*説明文・ボタンが配置される */
   text-align: center;
 }
 
-#top #top_caption #top_caption_button {
+#top .top_caption .top_caption_button {
   /* ボタンの周りに空白を設ける */
   margin-top: 1%;
 }
 
-#top #top_caption #top_caption_text {
+#top .top_caption .top_caption_text {
   font-size: 4.375vw;
 }
 
 @media screen and (min-width: 500px) {
-  #top #top_caption #top_caption_text {
+  #top .top_caption .top_caption_text {
     font-size: 18px;
   }
 }
