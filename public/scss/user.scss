@@ -1,10 +1,11 @@
-@charset "UTF-8";
 /* Author: sh4869 */
 /* import webfont */
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 /******************/
 /* Global Setting */
 /******************/
+
 body {
   background: #FFF;
   margin: 0px;
@@ -17,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Tag Setting */
+
 img {
   margin: 0 auto;
 }
@@ -31,16 +33,17 @@ hr {
 }
 
 /* Title Tag Setting */
+
 h1.maintitle {
   font-weight: 400;
   font-size: 2.3rem;
   margin-top: 0.5em;
-}
 
-h1.maintitle.english {
-  font-weight: 400;
-  font-size: 2.0rem;
-  margin-top: 0.5em;
+  &.english {
+    font-weight: 400;
+    font-size: 2.0rem;
+    margin-top: 0.5em;
+  }
 }
 
 h2.title {
@@ -61,31 +64,34 @@ h4.minititle {
 }
 
 /* Content Class */
+
 .contents {
   margin: 0 1rem;
 }
 
 /* Caption Class */
+
 .caption {
   margin: 0 1rem;
-}
 
-.caption p {
-  line-height: 1.5rem;
-  text-indent: 1em;
-  margin: 0.4rem 0rem;
-}
+  p {
+    line-height: 1.5rem;
+    text-indent: 1em;
+    margin: 0.4rem 0rem;
 
-.caption p.right {
-  text-align: right;
-}
+    &.right {
+      text-align: right;
+    }
+  }
 
-.caption a {
-  color: black;
-  text-decoration: underline;
+  a {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 /* section page setting */
+
 .section.ui.page.grid {
   padding-top: 1.5rem;
   color: #042B06;
@@ -106,18 +112,20 @@ h4.minititle {
 }
 
 #contact {
-  background-color: #0ab4ff;
+  background-color: rgb(10, 180, 255);
   color: black;
   padding-bottom: 2.0rem;
 }
 
 /* translate menu background */
+
 .translate-menu {
   background-color: #c35959 !important;
 }
 
 /* Global Class Setting*/
 /* 各sectionの中のメインコンテンツ*/
+
 .main {
   margin: 1%;
 }

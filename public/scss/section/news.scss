@@ -1,12 +1,12 @@
-@charset "UTF-8";
 /* News Section CSS*/
 /* 全体 */
+
 #news {
   background-color: #21d4ff;
-}
 
-#news h1.title {
-  color: #091e6f;
+  h1.title {
+    color: #091e6f;
+  }
 }
 
 ul.articles {
@@ -15,6 +15,7 @@ ul.articles {
 }
 
 /* 記事紹介コンポーネント全体の設定*/
+
 .article {
   background: #80dbfd;
   border: 3px solid #E5E5E5;
@@ -24,6 +25,7 @@ ul.articles {
 
 /* ニュースの埋め込み画像の最大値 
    大体この大きさを目安にサムネイルを作りたい */
+
 img.article_thumbnail {
   border-radius: 6px;
   max-width: 100%;
@@ -31,23 +33,29 @@ img.article_thumbnail {
 }
 
 /* 説明のmarginを指定する */
-.article_caption .description {
-  margin: 10px 0 10px 0;
-}
 
-.article_caption hr {
-  margin: 0.5rem;
+.article_caption {
+  .description {
+    margin: 10px 0 10px 0;
+  }
+
+  hr {
+    margin: 0.5rem;
+  }
 }
 
 /* slide navigation button */
-#news .uk-slidenav.uk-slidenav-contrast.uk-slidenav-next {
-  color: #fff;
-  right: 5%;
-  top: 30%;
-}
 
-#news .uk-slidenav.uk-slidenav-contrast.uk-slidenav-previous {
-  color: #fff;
-  left: 5%;
-  top: 30%;
+#news .uk-slidenav.uk-slidenav-contrast {
+  &.uk-slidenav-next {
+    color: #fff;
+    right: 5%;
+    top: 30%;
+  }
+
+  &.uk-slidenav-previous {
+    color: #fff;
+    left: 5%;
+    top: 30%;
+  }
 }
