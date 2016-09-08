@@ -1,0 +1,40 @@
+@charset "UTF-8";
+#footer {
+  /*背景色は緑で統一 */
+  background-color: #42e468;
+}
+
+#footer .credit {
+  /* 左側の組織簡易紹介 */
+  border-right: 1px solid #006d04;
+}
+
+#footer .credit .caption {
+  /* 少しインデント */
+  margin: 0 1.5em;
+}
+
+#footer .credit .caption .description-class dt {
+  color: #444;
+  font-size: 1.1em;
+}
+
+#footer .credit .caption .description-class dt:nth-child(n+2) {
+  border-top-color: #15b10c;
+}
+
+#footer .credit .caption .description-class > dd {
+  color: #222;
+  text-indent: 1em;
+}
+
+#footer .credit .caption p {
+  line-height: 1.5rem;
+  text-indent: 1em;
+  margin: 0.4rem 0rem;
+  font-size: 1.1em;
+}
+
+#footer .credit .caption p.right {
+  text-align: right;
+}
