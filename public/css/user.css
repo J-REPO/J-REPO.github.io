@@ -1,33 +1,9 @@
 @charset "UTF-8";
 /* Author: sh4869 */
 /* import webfont */
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-/******************/
-/* Global Setting */
-/******************/
-body {
-  background: #FFF;
-  margin: 0px;
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
-  background: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
-}
-
 /* Tag Setting */
 img {
   margin: 0 auto;
-}
-
-hr {
-  border: 0;
-  height: 0;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 1.5rem 0;
 }
 
 /* Title Tag Setting */
@@ -41,12 +17,6 @@ h1.maintitle.english {
   font-weight: 400;
   font-size: 2.0rem;
   margin-top: 0.5em;
-}
-
-h2.title {
-  font-weight: 500;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 h3.minititle {
@@ -96,11 +66,6 @@ h4.minititle {
   background-color: white;
 }
 
-#about {
-  background-color: #42e468;
-  color: black;
-}
-
 #project {
   background-color: white;
 }
@@ -118,6 +83,3 @@ h4.minititle {
 
 /* Global Class Setting*/
 /* 各sectionの中のメインコンテンツ*/
-.main {
-  margin: 1%;
-}
