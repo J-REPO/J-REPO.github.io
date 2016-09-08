@@ -1,3 +1,20 @@
-.section {
-  margin: 10px 0px;
+/* Font Setting */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/******************/
+/* Global Setting */
+/******************/
+
+body {
+  background: #FFF;
+  margin: 0px;
+  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+  background: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+}
+/* それぞれのセクションのメインコンテンツについて */
+.main {
+  margin: 1%;
 }
