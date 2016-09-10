@@ -1,0 +1,34 @@
+$criteria_width: 500px;
+#link-button {
+  background: #02AAB0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #01ffd6 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #01ffd6, #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+  padding-top: 5%;
+  padding-bottom: 5%;
+  .link-button {
+    text-align: center;
+    &.product {
+      img{
+        background: #ff2d2d;
+      }
+    }
+    img {
+      border: 0.5px solid #03a9f4;
+      width: auto;
+      width: auto;
+      max-width:80%;
+      max-height: 80%;
+    }
+    .caption {
+      margin-top: 10px;
+      h2 {
+        font-weight: bolder;
+        color: #656565;
+        font-size: 5.375vw;
+         @media screen and (min-width: $criteria_width){
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
