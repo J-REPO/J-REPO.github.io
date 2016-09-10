@@ -36,7 +36,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass',function() {
-	return gulp.src('./public/scss/**/*.scss',{base:'./public/scss/'})
+	return gulp.src(['./public/scss/**/*.scss','./public/scss/*.scss'],{base:'./public/scss/'})
 			.pipe(sass({outputStyle:'expanded'}).on('error', sass.logError))
 			.pipe(gulp.dest('./public/css/'))
 });
@@ -44,7 +44,7 @@ gulp.task('sass',function() {
 // 監視設定
 gulp.task('watch',function(){
 	gulp.watch(['./*/*.pug','./newui/**/*.pug','./*.pug','./json/*.json'],['pug']);
-	gulp.watch('./public/scss/**/*.scss',['sass']);
+	gulp.watch(['./public/scss/**/*.scss','./public/scss/*.scss'],['sass']);
 });
 
 // 項目追加
