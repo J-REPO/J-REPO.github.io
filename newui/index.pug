@@ -5,12 +5,15 @@ block css
   include ../template/link/_newui_css
   link(href=option.directory + '/public/css/components/slideshow.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/components/slidenav.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/publi/css/components/parallax.css', rel='stylesheet', type='text/css')
 block js
   include ../template/script/_newui_js
   script(src=option.directory + '/js/components/slideshow.js')
+  script(src=option.directory + '/js/components/parallax.js')
 block append script
   include ../template/script/_menu_script
 block append body
   include ./section/top
   include ./section/news
+  include ./section/link-button
   include ./section/footer
