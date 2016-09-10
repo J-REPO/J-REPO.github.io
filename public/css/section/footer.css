@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 変数*/
 #footer {
   /*背景色は緑で統一 */
   background-color: #42e468;
@@ -6,7 +7,7 @@
 
 #footer .credit {
   /* 左側の組織簡易紹介 */
-  border-right: 1px solid #006d04;
+  /* border-right: 1px solid #006d04; */
 }
 
 #footer .credit .caption {
@@ -37,4 +38,41 @@
 
 #footer .credit .caption p.right {
   text-align: right;
+}
+
+#footer .contact {
+  /*Twitter,Email,Facebookなど */
+}
+
+#footer .contact ul.uk-list.links {
+  padding-left: 2.5em;
+}
+
+#footer .contact ul.uk-list.links li {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
+#footer .contact ul.uk-list.links li.twitter {
+  color: #55acee;
+}
+
+#footer .contact ul.uk-list.links li.facebook {
+  color: #3b5998;
+}
+
+#footer .contact ul.uk-list.links li a {
+  color: inherit;
+}
+
+#footer .contact ul.uk-list.links li a:hover {
+  text-decoration: none;
+}
+
+#footer .site-content ul.uk-list.content-list {
+  padding-left: 2.5em;
+}
+
+#footer .site-content ul.uk-list.content-list li {
+  font-size: 1.3em;
 }
