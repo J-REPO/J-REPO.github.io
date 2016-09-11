@@ -3,10 +3,13 @@ $criteria_width: 640px;
 #about-top {
   background-size: cover;
   background-image: url('../../img/about/top-background.jpg');
-  text-align: right;
   .about-top-title {
     margin-top:10rem;
     margin-right:2em;  
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 0.8px solid #505050;
+    text-align: right;
     h1.title  {
       color: black;
       font-size: 5.375vw;
