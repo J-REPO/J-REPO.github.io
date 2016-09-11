@@ -1,6 +1,6 @@
 extends ../template/_layout
 block vars
-  - var option = data.newui
+  - var option = data.activity
 block css
   include ../template/link/_newui_css
   link(href=option.directory + '/public/css/section/activity-top.css', rel='stylesheet', type='text/css')
@@ -8,6 +8,6 @@ block css
 block js
   include ../template/script/_newui_js
 block append body
-  include ./section/activity-top
-  include ./section/activity-content
+  include ./section/activity/top
+  include ./section/activity/content
   include ./section/footer
