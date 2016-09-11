@@ -1,6 +1,6 @@
 extends ../template/_layout
 block vars
-  - var option = data.newui
+  - var option = data.greeting
 block css
   include ../template/link/_newui_css
   link(href=option.directory + '/public/css/section/greeting-top.css', rel='stylesheet', type='text/css')
@@ -8,6 +8,6 @@ block css
 block js
   include ../template/script/_newui_js
 block append body
-  include ./section/greeting-top
-  include ./section/greeting-content
+  include ./section/greeting/top
+  include ./section/greeting/content
   include ./section/footer
