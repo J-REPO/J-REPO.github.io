@@ -1,0 +1,27 @@
+#activity-content {
+  background: #e91e63;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #e91e63, #fd6678);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #e91e63, #fd6678);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#activity-content .activity-content-content {
+  margin: 1em;
+}
+
+#activity-content .activity-content-content h2 {
+  margin: 2em 0;
+}
+
+#activity-content .activity-content-content .caption {
+  margin-left: 1em;
+}
+
+#activity-content .activity-content-content .caption p {
+  color: #353535;
+  text-indent: 1em;
+  font-size: 1.05em;
+  line-height: 1.3em;
+}
