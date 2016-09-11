@@ -43,8 +43,8 @@ gulp.task('sass',function() {
 
 // 監視設定
 gulp.task('watch',function(){
-	gulp.watch(['./*/*.pug','./newui/**/*.pug','./*.pug','./json/*.json'],['pug']);
-	gulp.watch(['./public/scss/**/*.scss','./public/scss/*.scss'],['sass']);
+	gulp.watch(['./!(node_modules)/**/{*,**/*}.pug','./json/*.json'],['pug']);
+	gulp.watch(['./public/scss/**/*.scss'],['sass']);
 });
 
 // 項目追加
