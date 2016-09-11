@@ -1,0 +1,30 @@
+#greeting-content {
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00d2ff, #589eff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00d2ff, #589eff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#greeting-content .greeting-content-content {
+  margin: 1em;
+}
+
+#greeting-content .greeting-content-content h2 {
+  margin: 2em 0;
+}
+
+#greeting-content .greeting-content-content .caption {
+  margin-left: 1em;
+}
+
+#greeting-content .greeting-content-content .caption p {
+  text-indent: 1em;
+  font-size: 1.05em;
+  line-height: 1.3em;
+}
+
+#greeting-content .greeting-content-content .caption p.right {
+  text-align: right;
+}
