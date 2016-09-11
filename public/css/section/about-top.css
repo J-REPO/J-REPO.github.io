@@ -1,0 +1,22 @@
+#about-top {
+  background-size: cover;
+  background-image: url("../../img/top-background.JPG");
+  text-align: right;
+}
+
+#about-top .about-top-title {
+  margin-top: 10rem;
+  margin-right: 2em;
+}
+
+#about-top .about-top-title h1.title {
+  color: black;
+  font-size: 5.375vw;
+}
+
+@media screen and (min-width: 640px) {
+  #about-top .about-top-title h1.title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
