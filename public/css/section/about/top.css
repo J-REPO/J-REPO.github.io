@@ -1,9 +1,9 @@
-#greeting-top {
+#about-top {
   background-size: cover;
-  background-image: url("../../img/greeting/top-background.jpg");
+  background-image: url("../../../img/about/top-background.jpg");
 }
 
-#greeting-top .greeting-top-title {
+#about-top .about-top-title {
   margin-top: 10rem;
   margin-right: 2em;
   margin-left: 2em;
@@ -12,13 +12,13 @@
   text-align: right;
 }
 
-#greeting-top .greeting-top-title h1.title {
+#about-top .about-top-title h1.title {
   color: black;
   font-size: 5.375vw;
 }
 
 @media screen and (min-width: 640px) {
-  #greeting-top .greeting-top-title h1.title {
+  #about-top .about-top-title h1.title {
     font-size: 36px;
     line-height: 42px;
   }
