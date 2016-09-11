@@ -1,0 +1,13 @@
+#greeting-top {
+  background-size: cover;
+  background-image: url("../../img/greeting/top-background.jpg");
+}
+
+#greeting-top .greeting-top-title {
+  margin-top: 10rem;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 0.8px solid #505050;
+  text-align: right;
+}
