@@ -8,6 +8,10 @@
           .caption
             each texts in content.texts
               p= texts
-            each text in content.righttexts
-              p.right=text
+            .uk-grid.director
+              .uk-width-large-1-3.director-content.img
+                img(src=option.directory + '/public/img/greeting/eguchi.jpg')
+              .uk-width-large-2-3.director-content.text
+                each text in content.righttexts
+                  p.right=text
     .uk-width-large-1-6.uk-hidden-small

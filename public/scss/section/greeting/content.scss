@@ -15,7 +15,24 @@
         line-height: 1.3em;
         &.right {
           text-align: right;
+          font-size: 1.3em;
         }
+      } 
+      .director {
+        .director-content {
+          margin-top: 1em;
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 60%;
+            border-radius: 40px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+          }
+          &.text {
+            padding-right: 2em;
+          }
+        } 
       }
     }
   }

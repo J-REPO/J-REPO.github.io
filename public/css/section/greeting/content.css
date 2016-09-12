@@ -27,4 +27,22 @@
 
 #greeting-content .greeting-content-content .caption p.right {
   text-align: right;
+  font-size: 1.3em;
+}
+
+#greeting-content .greeting-content-content .caption .director .director-content {
+  margin-top: 1em;
+}
+
+#greeting-content .greeting-content-content .caption .director .director-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+
+#greeting-content .greeting-content-content .caption .director .director-content.text {
+  padding-right: 2em;
 }
