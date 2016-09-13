@@ -1,6 +1,7 @@
 [
     {
         "title":"THINKERS FES 2016で講演を行いました",
+        "url": "/article/2016/8-30-thinkers",
         "img_url":"/public/img/article/2016/8-30-thinkers/thumbnail.jpg",
         "description":"THINKERS FES 2016において弊団体理事長の江口壮哉が講演を行いました。",
         "author":"笠井信宏",
@@ -8,7 +9,8 @@
     },
     {
         "title":"Maker Faire Tokyo 2016に出展しました",
-        "img_url":"/public/img/article/2016/8-6-mft/thumbnail.png",
+        "url": "/article/2016/8-6-mft",
+        "img_url":"/public/img/article/2016/8-6-mft/thumbnail.jpg",
         "description":"2016年8月6日,7日に行われたMaker Faire Tokyo 2016に出展させて頂きました。",
         "author":"笠井信宏",
         "date": "2016/08/7"
