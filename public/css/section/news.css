@@ -30,7 +30,8 @@
 
 #news .article img.article_thumbnail {
   /* ニュースの埋め込み画像の最大値 
-   大体この大きさを目安にサムネイルを作りたい */
+   大体この大きさを目安にサムネイルを作りたい 
+    横:縦 = 1: 2.44*/
   border-radius: 6px;
   max-width: 100%;
   max-height: 100%;
