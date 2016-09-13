@@ -1,0 +1,13 @@
+extends ../template/_layout
+block vars
+  - var option = data.news
+block css
+  include ../template/link/_newui_css
+    link(href=option.directory + '/public/css/section/news/top.css', rel='stylesheet', type='text/css')
+    link(href=option.directory + '/public/css/section/news/content.css', rel='stylesheet', type='text/css')
+block js
+  include ../template/script/_newui_js
+block append body
+  include ./section/news/top
+  include ./section/news/content
+  include ./section/footer
