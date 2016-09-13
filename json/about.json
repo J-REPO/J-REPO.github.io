@@ -2,6 +2,7 @@
     "title": "弊法人について - 日本ロボット教育推進機構",
     "description": "日本ロボット教育推進機構についてや活動理念について掲載しています。",
     "keywords": ["FRC","日本ロボット教育推進機構","J-REPO"],
+    "author":"J-REPO,Kasai Nobuhiro,sh4869(sh4869.net)",
     "directory": "..",
     "top": {
         "title": "日本ロボット教育推進機構について"

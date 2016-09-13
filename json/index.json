@@ -2,5 +2,6 @@
     "title":"J-REPO - 日本ロボット教育推進機構",
     "description":"中高生へのロボット教育を推進する日本ロボット教育推進機構(J-REPO)公式サイトです。",
     "keywords": ["FRC","日本ロボット教育推進機構","J-REPO"],
+    "author":"J-REPO,Kasai Nobuhiro,sh4869(sh4869.net)",
     "directory": "."
 }
