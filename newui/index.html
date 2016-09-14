@@ -46,13 +46,12 @@
     <!-- CSS-->
     <link href="../public/css/uikit.css" rel="stylesheet" type="text/css">
     <link href="../public/css/global.css" rel="stylesheet" type="text/css">
-    <link href="../public/css/section/top.css" rel="stylesheet" type="text/css">
-    <link href="../public/css/section/link-button.css" rel="stylesheet" type="text/css">
-    <link href="../public/css/section/news.css" rel="stylesheet" type="text/css">
-    <link href="../public/css/section/footer.css" rel="stylesheet" type="text/css">
+    <link href="../public/css/section/index/top.css" rel="stylesheet" type="text/css">
+    <link href="../public/css/section/index/link-button.css" rel="stylesheet" type="text/css">
+    <link href="../public/css/section/index/news.css" rel="stylesheet" type="text/css">
+    <link href="../public/css/section/common/footer.css" rel="stylesheet" type="text/css">
     <link href="../public/css/components/slideshow.css" rel="stylesheet" type="text/css">
     <link href="../public/css/components/slidenav.css" rel="stylesheet" type="text/css">
-    <link href="../publi/css/components/parallax.css" rel="stylesheet" type="text/css">
     <!-- JS-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="../js/uikit.js"></script>
@@ -74,18 +73,6 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga')
       ga('create', 'UA-46319605-13', 'auto');
       ga('send', 'pageview');
-    </script>
-    <script>
-      $(function(){
-          $('a[href^=#]').click(function(){
-              var speed = 1000;
-              var href= $(this).attr("href");
-              var target = $(href == "#" || href == "" ? 'html' : href);
-              var position = target.offset().top;
-              $("html, body").animate({scrollTop:position}, speed, "swing");
-              return false;
-          });
-      });
     </script>
   </head>
   <body>

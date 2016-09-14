@@ -2,11 +2,15 @@ extends ../template/_layout
 block vars
   - var option = data.activity
 block css
-  include ../template/link/_newui_css
+  link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
   link(href=option.directory + '/public/css/section/activity/top.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/section/activity/content.css', rel='stylesheet', type='text/css')
-block js
-  include ../template/script/_newui_js
+block js  
+  script(src='//code.jquery.com/jquery-1.11.0.min.js')
+  script(src=option.directory + '/js/uikit.js')
+  include ../template/script/_analytics
 block append body
   include ./section/activity/top
   include ./section/activity/content

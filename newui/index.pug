@@ -2,16 +2,20 @@ extends ../template/_layout
 block vars
   - var option = data.newui
 block css
-  include ../template/link/_newui_css
+  link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/top.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/link-button.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/news.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
   link(href=option.directory + '/public/css/components/slideshow.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/components/slidenav.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/publi/css/components/parallax.css', rel='stylesheet', type='text/css')
 block js
-  include ../template/script/_newui_js
+  script(src='//code.jquery.com/jquery-1.11.0.min.js')
+  script(src=option.directory + '/js/uikit.js')
+  include ../template/script/_analytics
   script(src=option.directory + '/js/components/slideshow.js')
   script(src=option.directory + '/js/components/parallax.js')
-block append script
-  include ../template/script/_menu_script
 block append body
   include ./section/index/top
   include ./section/index/news
