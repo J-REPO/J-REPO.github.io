@@ -88,3 +88,7 @@
   margin-top: 8px;
   font-size: 1.1em;
 }
+
+#footer .site-content ul.uk-list.content-list li a {
+  color: #444;
+}
