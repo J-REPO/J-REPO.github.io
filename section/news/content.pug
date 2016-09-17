@@ -4,8 +4,9 @@
       .uk-width-large-1-5.uk-hidden-small
       .uk-width-large-3-5.uk-width-small-1-1.article-center
         .article
-          figure.uk-overlay
-            img(src=option.directory + article.img_url, alt="alt")
-            figcaption.uk-overlay-panel.uk-overlay-background
-              h2=article.title
+          a(href=article.url + ".html")
+            figure.uk-overlay
+              img(src=option.directory + article.img_url, alt="alt")
+              figcaption.uk-overlay-panel.uk-overlay-background
+                h2=article.title
       .uk-width-large-1-5.uk-hidden-small
