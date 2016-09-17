@@ -6,6 +6,11 @@ $criteria_width: 500px;
   padding-top: 5%;
   padding-bottom: 5%;
   .link-button {
+     a {
+       &:hover {
+         text-decoration:none;
+       }
+     }
     text-align: center;
     &.product {
       img{
