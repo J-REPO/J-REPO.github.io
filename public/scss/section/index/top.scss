@@ -1,0 +1,25 @@
+/** 
+ * author: sh4869
+ * description: Top Section Style Sheet
+ */
+ $criteria_width: 500px;
+
+#top {
+  padding: 1%;
+  .top_img {
+    margin:  1em 0;
+  }
+  
+  .top_caption {
+    /*説明文・ボタンが配置される */
+    text-align: center;
+    margin: 2em 1em; 
+    .top_caption_text {
+      font-size: 4.375vw;
+      @media screen and (min-width: $criteria_width){
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}

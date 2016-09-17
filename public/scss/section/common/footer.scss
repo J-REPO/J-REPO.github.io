@@ -1,0 +1,81 @@
+/* 変数*/
+$twitter_color:#55acee;
+$facebook_color:#3b5998;
+$criteria_width: 500px;
+
+#footer {
+  /*背景色は緑で統一 */
+  background: #56ab2f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #69e22b , #a8e063); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left,#69e22b , #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+  .credit {
+    margin-left: 1em;
+    /* 左側の組織簡易紹介 */
+    /* border-right: 1px solid #006d04; */
+    .caption {
+      /* 少しインデント */
+      margin: 0 1.5em;
+      .description-class {
+        dt {
+          color: #444;
+          font-size: 1.1em;
+          &:nth-child(n+2){
+            border-top-color: #15b10c;
+          }
+        }
+        > dd {
+          color: #222;
+          text-indent: 1em;
+        }
+      }
+      p {
+        line-height: 1.5rem;
+        text-indent: 1em;
+        margin: 0.4rem 0rem;
+        font-size: 1.1em;
+
+        &.right {
+          text-align: right;
+        }
+      }
+    } 
+  }
+  .contact {
+    margin-left: 1em;
+    /*Twitter,Email,Facebookなど */
+    ul.uk-list.links {
+      padding-left: 2.5em;
+      li {
+        font-size: 1.1em;
+        margin-top: 1.2em;
+        &.twitter {
+          color: $twitter_color;
+        }
+        &.facebook {
+          color: $facebook_color;
+        }
+        a {
+          color: inherit;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+    }
+  }
+  .site-content {
+    margin-left: 1em;
+    ul.uk-list.content-list {
+      padding-left: 2.5em;
+      li {
+        margin-top: 8px;
+        font-size: 1.1em;
+        a {
+          color:#444;
+        }
+      }
+    }
+  }
+}

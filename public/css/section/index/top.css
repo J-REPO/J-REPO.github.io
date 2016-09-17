@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/** 
+ * author: sh4869
+ * description: Top Section Style Sheet
+ */
+#top {
+  padding: 1%;
+}
+
+#top .top_img {
+  margin: 1em 0;
+}
+
+#top .top_caption {
+  /*説明文・ボタンが配置される */
+  text-align: center;
+  margin: 2em 1em;
+}
+
+#top .top_caption .top_caption_text {
+  font-size: 4.375vw;
+}
+
+@media screen and (min-width: 500px) {
+  #top .top_caption .top_caption_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

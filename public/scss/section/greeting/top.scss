@@ -1,0 +1,22 @@
+$criteria_width: 640px;
+
+#greeting-top {
+  background-size: cover;
+  background-image: url('../../../img/greeting/top-background.jpg');
+  .greeting-top-title {
+    margin-top:10rem;
+    margin-right:2em;  
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 0.8px solid #505050;
+    text-align: right;
+    h1.title  {
+      color: black;
+      font-size: 5.375vw;
+      @media screen and (min-width: $criteria_width){
+        font-size:36px;
+        line-height: 42px;
+      }
+    }
+  }
+}
