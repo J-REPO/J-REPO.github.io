@@ -7,17 +7,18 @@
           ul.uk-slideshow.articles
             each article in data.articles.slice(0,2)
               li
-                .uk-panel.uk-panel-box.article
-                  .uk-panel-teaser
-                    img.article_thumbnail(src=option.directory + article.img_url)
-                  .article_caption
-                    .uk-flex.uk-flex-bottom.uk-flex-space-between
-                      div
-                        h2.title.uk-text-bold= article.title
-                      div.date
-                        h5.uk-text-right= article.date
-                    hr
-                    h4.description= article.description
+                a(href=article.url + ".html")
+                  .uk-panel.uk-panel-box.article
+                    .uk-panel-teaser
+                      img.article_thumbnail(src=option.directory + article.img_url)
+                    .article_caption
+                      .uk-flex.uk-flex-bottom.uk-flex-space-between
+                        div
+                          h2.title.uk-text-bold= article.title
+                        div.date
+                          h5.uk-text-right= article.date
+                      hr
+                      h4.description= article.description
           a.uk-slidenav.uk-slidenav-contrast.uk-slidenav-previous(href="",data-uk-slideshow-item="previous")
           a.uk-slidenav.uk-slidenav-contrast.uk-slidenav-next(href="",data-uk-slideshow-item="next")
     .uk-width-large-1-6.uk-hidden-small
