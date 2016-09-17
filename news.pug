@@ -1,4 +1,4 @@
-extends ../template/_layout
+extends ./template/_layout
 block vars
   - var option = data.news
 block css
@@ -10,7 +10,7 @@ block css
 block js
   script(src='//code.jquery.com/jquery-1.11.0.min.js')
   script(src=option.directory + '/js/uikit.js')
-  include ../template/script/_analytics
+  include ./template/script/_analytics
 block append body
   include ./section/news/top
   include ./section/news/content

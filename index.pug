@@ -1,116 +1,23 @@
 extends ./template/_layout
 block vars
   - var option = data.index
-block append script
-  include ./template/script/_menu_script
+block css
+  link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/top.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/link-button.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/index/news.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
+  link(href=option.directory + '/public/css/components/slideshow.css', rel='stylesheet', type='text/css')
+  link(href=option.directory + '/public/css/components/slidenav.css', rel='stylesheet', type='text/css')
+block js
+  script(src='//code.jquery.com/jquery-1.11.0.min.js')
+  script(src=option.directory + '/js/uikit.js')
+  include ./template/script/_analytics
+  script(src=option.directory + '/js/components/slideshow.js')
+  script(src=option.directory + '/js/components/parallax.js')
 block append body
-  .ui.fluid.five.item.inverted.small.fixed.menu
-    a.item(href='#top')
-      i.up.arrow.icon
-      |         Top
-    a.item(href='#about')
-      i.users.icon
-      |         about
-    a.item(href='#project')
-      i.trophy.icon
-      |         Product
-    a.item(href='#contact')
-      i.info.icon
-      |         Contact
-    a.item.translate-menu(href='/en')
-      i.translate.icon
-      |         English
-  #top.section.ui.page.grid
-    .white.row
-      .sixteen.wide.column
-        img.ui.image(src='public/img/jrepo-logo.png')
-  #about.section.ui.page.grid
-    .row
-      .sixteen.wide.column
-        h1.maintitle 日本ロボット教育推進機構
-        .contents
-          h3.minititle J-REPO - Japan Robotics Education Promotional Organization
-        hr
-        h2.title About
-        .contents
-          h3.minititle 日本ロボット教育推進機構とは?
-          .caption
-            p
-              | 一般社団法人 日本ロボット教育推進機構(英名：Japan Robotics Education Promotional Organization、略称：J-REPO)は、米国のロボット競技会 FRC2015 に参加した”Tokyo Technical Samurai”の一期生である江口壮哉を代表理事とし、同じく一期生である大西祐輝、原田英将を理事として平成27年11月4日に設立された非営利型の一般社団法人です。
-            p
-              | 弊法人は日本国内において、中高生を対象とした、ロボット教育を始めとする技術的な教育の普及に寄与することを目的としています。企業を始めとする他の団体とも積極的に連携し、下記の理念の実現を目指します。
-          h3.minititle 活動理念
-          .caption
-            p
-              | 中高生の技術教育の支援 及び 学びの機会の均一化を図り、日本の未来を担う若い技術者の育成と、産業の発展に貢献します。
-          h3.minititle 代表挨拶
-          .caption
-            p
-              | 私は高校生の時に、米国で行われる国際中高生ロボット競技会であるFIRST Robotics Competition (通称:FRC) に出場しました。この大会はチームを支援してくれるスポンサー企業を自分たちで募ることがルールの1つになっています。日本からFRCに出場する際には、200万円から400万円の資金が必要になります。ロボットを作る技術のみならず、高額の資金を集める力も求められるのが特徴的です。
-            p
-              | FRCに出場するための障壁は他にもあります。それはチームの環境です。たとえ同志を集めてチームを組んだとしても、母体となる団体(学校や地域の法人)の存在しないチームは、ルール上FRCへ参加することができません。環境という自らの力では解決できない問題により、貴重な活動のチャンスを奪われてしまうのです。そこで私はFRCに参加する上で、未成年では解決できない障壁を取り払い、中高生に対して”学びの機会が均等に存在する環境”を実現するために、弊法人を設立しました。
-            p
-              | 私はFRCを未来志向型の理想的な教育プログラムと考え、日本での普及活動を行います。FRCのようなプロジェクト化された教育は、起業やベンチャー志向の教育であると言えるでしょう。実際に何かの新しい事業を始める際には、企画・資金調達のプロセスが必要になります。FRCに参加することによってそれらを一度に経験することができるため、将来のビジョンを明確にするだけでなく、選択の幅を広げることができると考えています。また、大学受験における多様な入試制度の導入からも推察できるように、現代社会では一般に学校で学ぶ内容を越えた力を求められます。その点においても、FRCは日本の未来を担う中高生に多様なスキルを与えるため、良い刺激となるでしょう。
-            p
-              | J-REPOの役割は確かな実力と応用力を持った技術者の育成をすることです。目標を実現するためのスキルと、それを活用するための社会的応用力を持ち合わせた人材の育成を行います。そのために、FRC予選会を日本で行うことを一つの目標として掲げ、活動していく所存です。これからのJ-REPOを、どうぞよろしくお願いいたします。
-            p.right
-              | 平成 28年 7月  一般社団法人日本ロボット教育推進機構
-            p.right
-              | 代表理事  江口 壮哉
-  #project.section.ui.page.grid
-    .row
-      .sixteen.wide.column
-        h2.title Product
-        .contents
-          h3.minititle
-            | ロボット競技会(FRC)の広告及び普及活動
-          .caption
-            p
-              | FRC(正式名称：FIRST Robotics Competition)は米国のNPO法人FIRSTが開催している、高校生のための国際的なロボット競技会です。当法人がこの大会を推薦する理由としましては、
-            p
-              | ・ロボットの規格が大きく高校生にとって貴重な体験である
-            p
-              | ・ロボットを製作するだけに留まらず資金集めや広報といった活動が必須になるため、技術者になるための幅広いスキルを習得できる
-            p
-              | といったものが挙げられます。
-          h3.minititle
-            | FRC参加チームの支援
-          .caption
-            p
-              | FRCへの日本からの参加には様々な壁があり、決して容易ではありません。それでも、１人でも多くの日本の高校生がこの大会へ参加して、多くのことを学んでほしい。そんな願いから当法人は、FRCへの参加を希望する高校生を応援して参ります。
-          img.ui.large.image(src='public/img/tts.png')
-          .caption
-            p
-              | また今年度の事業の一環として、第二期”Tokyo Technical Samurai”をモデルチームとして採用し、FRC2016への参加に対する支援を行って参ります。
-            a(href='http://tokyotechnicalsamurai.ml', target='_blank')
-              p Tokyo Technical Samurai 公式ホームページ
-          h3.minititle
-            | 中学生及び高校生に対するロボット教育の推進
-          .caption
-            p
-              | 決してFRCへの参加支援だけが当法人の掲げる教育活動ではありません。中高生を対象とした工作教室や講演会などを、企業の皆様と協力しながら企画していきたいと考えております。
-  #contact.section.ui.page.grid
-    .row
-      .sixteen.wide.column
-        h2.title Contact
-        .contents
-          ul.ui.horizontal.list
-            .item
-              i.large.mail.icon
-              .content
-                .header メールアドレス
-                .description info☆j-repo.com ☆→@
-            .item
-              i.large.map.icon
-              .content
-                .header
-                  | 所在地
-                .description
-                  | 〒332-0031 埼玉県川口市青木2-2-43
-            .item
-              i.large.user.icon
-              .content
-                .header
-                  | 代表理事
-                .description
-                  | 江口壮哉
+  include ./section/index/top
+  include ./section/index/news
+  include ./section/index/link-button
+  include ./section/common/footer
