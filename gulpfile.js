@@ -43,7 +43,7 @@ gulp.task('sass',function() {
 
 // 監視設定
 gulp.task('watch',function(){
-	gulp.watch(['./!(node_modules)/**/{*,**/*}.pug','./json/*.json'],['pug']);
+	gulp.watch(['./!(node_modules)/**/{*,**/*}.pug','*.pug','./json/*.json'],['pug']);
 	gulp.watch(['./public/scss/**/*.scss'],['sass']);
 });
 
