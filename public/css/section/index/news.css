@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+#news ul.articles li a:hover {
+  text-decoration: none;
+}
+
 #news .article {
   /* 記事紹介コンポーネント全体の設定*/
   background: #80dbfd;

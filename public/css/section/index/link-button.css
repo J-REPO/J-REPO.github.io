@@ -13,6 +13,10 @@
   text-align: center;
 }
 
+#link-button .link-button a:hover {
+  text-decoration: none;
+}
+
 #link-button .link-button.product img {
   background: #ff2d2d;
 }

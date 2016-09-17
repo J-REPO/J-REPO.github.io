@@ -16,7 +16,8 @@
     "gulp-sass": "^2.3.2",
     "local-web-server": "^1.2.6",
     "node-notifier": "^4.6.0",
-    "npm-run-all": "^2.3.0"
+    "npm-run-all": "^2.3.0",
+    "jstransformer-markdown-it": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
