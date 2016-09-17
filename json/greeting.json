@@ -3,7 +3,7 @@
     "description":"日本ロボット教育推進機構代表江口 壮哉の挨拶を掲載しています。",
     "keywords": ["FRC","日本ロボット教育推進機構","J-REPO"],
     "author":"J-REPO,Kasai Nobuhiro,sh4869(sh4869.net)",
-    "directory": "..",
+    "directory": ".",
     "top": {
       "title":"代表挨拶"
     },
