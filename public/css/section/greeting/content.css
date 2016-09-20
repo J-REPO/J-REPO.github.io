@@ -13,6 +13,8 @@
 
 #greeting-content .greeting-content-content h2 {
   margin: 2em 0;
+  margin-left: 1em;
+  font-size: 22px;
 }
 
 #greeting-content .greeting-content-content .caption {

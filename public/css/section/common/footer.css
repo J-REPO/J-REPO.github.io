@@ -10,8 +10,13 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#footer h2.footer-title {
+  margin-left: 0.5em;
+}
+
 #footer .credit {
   margin-left: 1em;
+  margin-bottom: 1em;
   /* 左側の組織簡易紹介 */
   /* border-right: 1px solid #006d04; */
 }
@@ -48,6 +53,7 @@
 
 #footer .contact {
   margin-left: 1em;
+  margin-bottom: 1em;
   /*Twitter,Email,Facebookなど */
 }
 
@@ -78,6 +84,7 @@
 
 #footer .site-content {
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 #footer .site-content ul.uk-list.content-list {

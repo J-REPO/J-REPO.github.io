@@ -13,6 +13,9 @@
 
 #activity-content .activity-content-content h2 {
   margin: 2em 0;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-size: 22px;
 }
 
 #activity-content .activity-content-content .caption {
@@ -20,7 +23,6 @@
 }
 
 #activity-content .activity-content-content .caption p {
-  color: #353535;
   text-indent: 1em;
   font-size: 1.05em;
   line-height: 1.3em;
