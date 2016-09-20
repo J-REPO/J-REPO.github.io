@@ -16,6 +16,7 @@
 
 #footer .credit {
   margin-left: 1em;
+  margin-bottom: 1em;
   /* 左側の組織簡易紹介 */
   /* border-right: 1px solid #006d04; */
 }
@@ -52,6 +53,7 @@
 
 #footer .contact {
   margin-left: 1em;
+  margin-bottom: 1em;
   /*Twitter,Email,Facebookなど */
 }
 
@@ -82,6 +84,7 @@
 
 #footer .site-content {
   margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 #footer .site-content ul.uk-list.content-list {
