@@ -8,7 +8,9 @@ $criteria_width: 500px;
   background: #56ab2f; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #69e22b , #a8e063); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left,#69e22b , #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+  h2.footer-title {
+    margin-left:0.5em;
+  } 
   .credit {
     margin-left: 1em;
     /* 左側の組織簡易紹介 */

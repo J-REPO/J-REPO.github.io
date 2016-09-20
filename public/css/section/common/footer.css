@@ -10,6 +10,10 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#footer h2.footer-title {
+  margin-left: 0.5em;
+}
+
 #footer .credit {
   margin-left: 1em;
   /* 左側の組織簡易紹介 */
