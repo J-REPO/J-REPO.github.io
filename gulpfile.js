@@ -29,7 +29,7 @@ gulp.task('pug', function() {
 		files.forEach(function(filename){
 			json[filename.replace(".json","")] = JSON.parse(fs.readFileSync(dirname + filename));
 		});
-		return {data:json};
+		return {data:json,require:require};
 	}))
 	.pipe(pug({pretty: true}))
 	.pipe(gulp.dest('./'));

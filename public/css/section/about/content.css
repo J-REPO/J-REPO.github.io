@@ -27,3 +27,8 @@
   font-size: 1.05em;
   line-height: 1.3em;
 }
+
+#about-content .about-content-content .caption a {
+  color: #444;
+  text-decoration: underline;
+}
