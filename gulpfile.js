@@ -48,6 +48,11 @@ gulp.task('copy', function () {
 		.pipe(gulp.dest('dest/public'))
 });
 
+gulp.task('static',function(){
+	return gulp.src(["www/CNAME","www/*.pdf"],{base: "www/"})
+		.pipe(gulp.dest('dest/'))
+})
+
 // 監視設定
 gulp.task('watch', function () {
 	gulp.watch(['./!(node_modules)/**/{*,**/*}.pug', '*.pug', './json/*.json'], ['pug']);
@@ -63,7 +68,7 @@ gulp.task('connect', function () {
 	})
 })
 
-gulp.task('build', ['pug', 'sass', 'article', 'copy'])
+gulp.task('build', ['pug', 'sass', 'article', 'copy','static'])
 
 // 項目追加
 gulp.task('default', ['build', 'watch','connect']);
