@@ -20,6 +20,10 @@
   margin: 0 auto;
 }
 
+#news ul.articles li {
+  list-style-type: none;
+}
+
 #news ul.articles li a:hover {
   text-decoration: none;
 }
