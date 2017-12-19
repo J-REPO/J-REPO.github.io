@@ -10,6 +10,7 @@
     "directory": "dest/"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-data": "^1.2.1",
@@ -22,7 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "node_modules/.bin/gulp build && node scripts/deploy.js"
   },
   "repository": {
     "type": "git",
