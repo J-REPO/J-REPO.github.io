@@ -1,7 +1,7 @@
 extends ./_layout
 block vars
 block css
-	link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
+	link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css', rel='stylesheet', type='text/css')
 	link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
 	link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
 	link(href=option.directory + '/public/css/section/article/article-content.css',rel='stylesheet',type='text/css')
@@ -10,5 +10,15 @@ block js
 	script(src=option.directory + '/js/uikit.js')
 	include ../template/script/_analytics
 block append body
-	include ./article-content
+	#article-content.section
+		.uk-grid
+			.uk-width-large-1-6.uk-hidden-small
+			.uk-width-large-4-6.uk-width-small-1-1.main
+				.uk-article
+					h1.uk-article-title.article-title= option.article_title
+					.article-info
+						.uk-article-meta #{option.date} - #{option.author}
+					.article-text
+						include:markdown-it {{{md_url}}}
+			.uk-width-large-1-6.uk-hidden-small
 	include ../section/common/footer
