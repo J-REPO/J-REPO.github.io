@@ -2,21 +2,19 @@ extends ./template/_layout
 block vars
   - var option = data.index
 block css
-  link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/section/index/top.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/section/index/link-button.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/section/index/news.css', rel='stylesheet', type='text/css')
   link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
-  link(href=option.directory + '/public/css/components/slideshow.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/components/slidenav.css', rel='stylesheet', type='text/css')
-  link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.css")
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.css', rel='stylesheet', type='text/css')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css', rel='stylesheet', type='text/css')
 block js
-  script(src='//code.jquery.com/jquery-1.11.0.min.js')
-  script(src=option.directory + '/js/uikit.js')
+  script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.js")
   include ./template/script/_analytics
-  script(src=option.directory + '/js/components/slideshow.js')
-  script(src=option.directory + '/js/components/parallax.js')
 block append body
   include ./section/index/top
   include ./section/index/news
