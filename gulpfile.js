@@ -33,7 +33,7 @@ gulp.task('pug', function () {
 });
 
 gulp.task('article', function () {
-	return run('node www/tools/article-generator.js').exec()
+	return run('node article-generator.js').exec()
 })
 
 gulp.task('sass', function () {
