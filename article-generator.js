@@ -10,6 +10,7 @@ const html_ext = '.html';
 const md_ext = '.md';
 
 try {
+  fs.mkdirSync(__dirname  + "/dest")
   fs.mkdirSync(__dirname  + "/dest/article/");
 } catch(err){
 
@@ -22,7 +23,7 @@ var buildTemplate = (content, variables) => {
 };
 
 articles.forEach((article, index, array) => {
-  const mdfile_path = '..\\..\\markdown\\' + article.url + md_ext;
+  const mdfile_path = '../../markdown' + article.url + md_ext;
   const view = {
     md_url: mdfile_path
   };
@@ -30,9 +31,9 @@ articles.forEach((article, index, array) => {
   // Build Haml
   html = buildTemplate(output, article);
   try {
-    fs.accessSync(__dirname + "/dest/" + path.dirname(article.url))
+    fs.accessSync(__dirname + "/dest" + path.dirname(article.url))
   } catch (err){
-    fs.mkdirSync(__dirname + "/dest/" + path.dirname(article.url));
+    fs.mkdirSync(__dirname + "/dest" + path.dirname(article.url));
   }
-  fs.writeFile(__dirname + "/dest/" + article.url + html_ext, html)
+  fs.writeFile(__dirname + "/dest" + article.url + html_ext, html)
 });
