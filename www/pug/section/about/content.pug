@@ -5,8 +5,7 @@
     .uk-width-large-4-6.uk-width-small-1-1.main
       each content in option.content
        .about-content-content
-         h2= content.title
-         hr.content-title
+         h2.uk-heading-divider=content.title
          .caption
            each text in content.texts
              p!= md.renderInline(text)
