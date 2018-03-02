@@ -2,6 +2,7 @@ $criteria_width: 600px;
 
 #article-content {
   margin-right: 1em;
+  margin-left: 1em;
   .article-title{
      font-size: 4.5vw;
       @media screen and (min-width: $criteria_width){
