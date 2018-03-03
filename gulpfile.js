@@ -37,7 +37,7 @@ gulp.task('article', function () {
 })
 
 gulp.task('sass', function () {
-	return gulp.src(['./www/scss/**/*.scss', './www/scss/*.scss'], { base: './www/scss/' })
+	return gulp.src(['./www/scss/**/**.scss', './www/scss/**.scss'], { base: './www/scss/' })
 		.pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
 		.pipe(gulp.dest('dest/public/css'))
 		.pipe(connect.reload());
@@ -56,7 +56,7 @@ gulp.task('static',function(){
 // 監視設定
 gulp.task('watch', function () {
 	gulp.watch(['./!(node_modules)/**/{*,**/*}.pug', '*.pug', './json/*.json'], ['pug']);
-	gulp.watch(['./public/scss/**/*.scss'], ['sass']);
+	gulp.watch(['./www/scss/**/*.scss'], ['sass']);
 	gulp.watch(['./www/markdown/**/*.md'], ['article']);
 });
 
