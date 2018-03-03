@@ -1,13 +1,16 @@
-meta(content=option.title, property='og:title')
+
+meta(content=keywords.join(), name='keywords')
+meta(content=author, name='author')
+meta(content=description, name='description')
+// OGP
+meta(content=title, property='og:title')
 meta(content='website', property='og:type')
 meta(content='http://j-repo.com', property='og:url')
 meta(contnet='http://j-repo.com/public/img/jrepo-logo-minimum.png', property='og:image')
-meta(content=option.description, property='og:description')
-meta(content=option.keywords.join(), name='keywords')
-meta(content=option.author, name='author')
-meta(content=option.description, name='description')
+meta(content=description, property='og:description')
+// Twitter
 meta(content='summary', name='twitter:card')
 meta(content='@jrepo_official', name='twitter:site')
-meta(content=option.title, name='twitter:title')
+meta(content=title, name='twitter:title')
 meta(content='http://j-repo.com/img/jrepo-logo-minimum.png', name='twitter:image')
-meta(content=option.description, name='twitter:description')
+meta(content=description, name='twitter:description')
