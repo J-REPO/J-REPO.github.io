@@ -2,36 +2,502 @@
 /* Font Setting */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-/******************/
 /* Global Setting */
-/******************/
 body {
   background: #FFF;
   margin: 0px;
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+  font-family: 'Noto Sans Japanese', sans-serif, "Helvetica", "メイリオ";
   background: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans Japanese', sans-serif, "Helvetica", "メイリオ";
 }
 
 /* それぞれのセクションのメインコンテンツについて */
-.main {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-}
-
 .section {
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-hr.content-title {
+.top {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-size: cover;
+}
+
+.top .title {
+  margin-top: 10rem;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 0.8px solid #505050;
+  text-align: right;
+}
+
+.top .title h1 {
+  color: #272727;
+  font-size: 6.375vw;
+}
+
+@media screen and (min-width: 640px) {
+  .top .title h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.main .contents {
+  background: rgba(255, 255, 255, 0.2);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media (min-width: 767px) {
+  .main .contents {
+    border-radius: 10px;
+    margin: 2em 0;
+  }
+}
+
+.main .contents .content .title h2 {
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  margin-left: 1em;
+  font-weight: 600;
+}
+
+.main .contents .content .caption {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+.main .contents .content .caption p {
+  text-indent: 1em;
+}
+
+.main .contents .content .caption a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/* 変数*/
+#footer {
+  /*背景色は緑で統一 */
+  background: #56ab2f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #69e22b, #a8e063);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #69e22b, #a8e063);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#footer h2.footer-title {
+  margin-left: 0.5em;
+}
+
+#footer .credit {
+  margin-bottom: 1em;
+  /* 左側の組織簡易紹介 */
+  /* border-right: 1px solid #006d04; */
+}
+
+#footer .credit .caption {
+  /* 少しインデント */
+  margin: 0 1.5em;
+}
+
+#footer .credit .caption .description-class dt {
+  color: #444;
+  font-size: 1.1em;
+}
+
+#footer .credit .caption .description-class dt:nth-child(n+2) {
+  border-top-color: #15b10c;
+}
+
+#footer .credit .caption .description-class > dd {
+  color: #222;
+  text-indent: 1em;
+}
+
+#footer .credit .caption p {
+  line-height: 1.5rem;
+  text-indent: 1em;
+  margin: 0.4rem 0rem;
+  font-size: 1.1em;
+}
+
+#footer .credit .caption p.right {
+  text-align: right;
+}
+
+#footer .contact {
+  margin-bottom: 1em;
+  /*Twitter,Email,Facebookなど */
+}
+
+#footer .contact ul.uk-list.links {
+  padding-left: 2.5em;
+}
+
+#footer .contact ul.uk-list.links li {
+  font-size: 1.1em;
+  margin-top: 1.2em;
+}
+
+#footer .contact ul.uk-list.links li.twitter {
+  color: #55acee;
+}
+
+#footer .contact ul.uk-list.links li.facebook {
+  color: #3b5998;
+}
+
+#footer .contact ul.uk-list.links li a {
+  color: inherit;
+}
+
+#footer .contact ul.uk-list.links li a:hover {
+  text-decoration: none;
+}
+
+#footer .site-content {
+  margin-bottom: 1em;
+}
+
+#footer .site-content ul.uk-list.content-list {
+  padding-left: 2.5em;
+}
+
+#footer .site-content ul.uk-list.content-list li {
+  margin-top: 8px;
+  font-size: 1.1em;
+}
+
+#footer .site-content ul.uk-list.content-list li a {
+  color: #444;
+}
+
+#about-top {
+  background-image: url("/public/img/about/top-background.jpg");
+}
+
+#about-content {
+  background: #28c559;
+  background: -webkit-linear-gradient(to left top, #28c559, #56B4D3);
+  background: linear-gradient(to left top, #28c559, #56B4D3);
+}
+
+#activity-top {
+  background-size: cover;
+  background-image: url("/public/img/activity/top-background.jpg");
+}
+
+#activity-top .activity-top-title {
+  margin-top: 10rem;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  border-bottom: 0.8px solid #444;
+  text-align: right;
+}
+
+#activity-top .activity-top-title h1.title {
+  color: black;
+  font-size: 6.375vw;
+}
+
+@media screen and (min-width: 640px) {
+  #activity-top .activity-top-title h1.title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+#activity-content {
+  background: #e91e63;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff544c, #fd6678);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff544c, #fd6678);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#article-content {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+#article-content .article-title {
+  font-size: 4.5vw;
+}
+
+@media screen and (min-width: 600px) {
+  #article-content .article-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+#article-content .article-info {
+  text-align: right;
+  margin: 1em 0;
+}
+
+#article-content .article-text {
+  margin-left: 1em;
+}
+
+#greeting-top {
+  background-image: url("/public/img/greeting/top-background.jpg");
+}
+
+#greeting-content {
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to right, #00d2ff, #589eff);
+  background: linear-gradient(to right, #00d2ff, #589eff);
+}
+
+#greeting-content .content .director {
+  margin-bottom: 1em;
+}
+
+#greeting-content .content .director .director-content {
+  margin-top: 1em;
+}
+
+#greeting-content .content .director .director-content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+
+#greeting-content .content .director .director-content.text {
+  margin-top: 1em;
+}
+
+#greeting-content .content .director .director-content.text p {
+  text-align: right;
+  font-size: 1.1em;
+}
+
+/** 
+ * author: sh4869
+ * description: Top Section Style Sheet
+ */
+#top {
+  padding: 1%;
+}
+
+#top .top_img {
+  margin: 1em 0;
+}
+
+#top .top_caption {
+  /*説明文・ボタンが配置される */
+  text-align: center;
+  margin: 2em 1em;
+}
+
+#top .top_caption .top_caption_text {
+  font-size: 4.375vw;
+}
+
+@media screen and (min-width: 500px) {
+  #top .top_caption .top_caption_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+/* News Section CSS*/
+/* 全体 */
+#news {
+  background: #00c6ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #00c6ff, #0072ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #00c6ff, #0072ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#news h1.title {
+  color: #091e6f;
+}
+
+#news ul.articles {
+  /*記事上のDOM */
+  width: 90%;
+  margin: 0 auto;
+}
+
+#news ul.articles li {
+  list-style-type: none;
+}
+
+#news ul.articles li a:hover {
+  text-decoration: none;
+}
+
+#news .article {
+  /* 記事紹介コンポーネント全体の設定*/
+  background: #80dbfd;
+  border: 3px solid #E5E5E5;
+  border: none;
+  border-radius: 10px;
+}
+
+#news .article img.article_thumbnail {
+  /* ニュースの埋め込み画像の最大値 
+     大体この大きさを目安にサムネイルを作りたい 
+      横:縦 = 1: 2.44*/
+  border-radius: 6px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#news .article .article_caption {
+  /* 説明のmarginを指定する */
+}
+
+#news .article .article_caption .description {
+  margin: 10px 0 10px 0;
+}
+
+#news .article .article_caption hr {
   border: 0;
   height: 0;
-  margin-right: 3em;
-  margin-left: 3em;
-  border-top: 0.1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0.5rem 0;
+}
+
+#news .uk-slidenav.uk-slidenav-contrast.uk-slidenav-next {
+  /* Slide nav button right*/
+  color: #fff;
+  right: 5%;
+  top: 30%;
+}
+
+#news .uk-slidenav.uk-slidenav-contrast.uk-slidenav-previous {
+  /* Slide nav button left*/
+  color: #fff;
+  left: 5%;
+  top: 30%;
+}
+
+#link-button {
+  background: #02AAB0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #01ffd6, #00CDAC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #01ffd6, #00CDAC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#link-button .link-button {
+  text-align: center;
+}
+
+#link-button .link-button a:hover {
+  text-decoration: none;
+}
+
+#link-button .link-button.product img {
+  background: #ff2d2d;
+}
+
+#link-button .link-button img {
+  width: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#link-button .link-button .caption {
+  margin-top: 10px;
+}
+
+#link-button .link-button .caption h2 {
+  font-weight: bolder;
+  color: #656565;
+  font-size: 5.375vw;
+}
+
+@media screen and (min-width: 500px) {
+  #link-button .link-button .caption h2 {
+    font-size: 18px;
+  }
+}
+
+#news-top {
+  background: #16BFFD;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #16BFFD, #CB3066);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #16BFFD, #CB3066);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#news-top .news-top-title {
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 3em;
+  text-align: left;
+  border-bottom: 0.5px solid white;
+  padding: 0.5em;
+}
+
+#news-top .news-top-title h1.title {
+  margin-bottom: 0em;
+  font-weight: 100;
+  color: white;
+}
+
+#news-content {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #16BFFD;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #16BFFD, #CB3066);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #16BFFD, #CB3066);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#news-content .article-content {
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+#news-content .article-content .article-center {
+  padding-left: 0;
+}
+
+#news-content .article-content .article {
+  width: 100%;
+  background: white;
+}
+
+#news-content .article-content .article figure.uk-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+#news-content .article-content .article figure.uk-overlay figcaption h2 {
+  color: #ddd;
 }

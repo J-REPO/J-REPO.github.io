@@ -1,4 +1,33 @@
 @charset "UTF-8";
+/** 
+ * author: sh4869
+ * description: Top Section Style Sheet
+ */
+#top {
+  padding: 1%;
+}
+
+#top .top_img {
+  margin: 1em 0;
+}
+
+#top .top_caption {
+  /*説明文・ボタンが配置される */
+  text-align: center;
+  margin: 2em 1em;
+}
+
+#top .top_caption .top_caption_text {
+  font-size: 4.375vw;
+}
+
+@media screen and (min-width: 500px) {
+  #top .top_caption .top_caption_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 /* News Section CSS*/
 /* 全体 */
 #news {
@@ -38,8 +67,8 @@
 
 #news .article img.article_thumbnail {
   /* ニュースの埋め込み画像の最大値 
-   大体この大きさを目安にサムネイルを作りたい 
-    横:縦 = 1: 2.44*/
+     大体この大きさを目安にサムネイルを作りたい 
+      横:縦 = 1: 2.44*/
   border-radius: 6px;
   max-width: 100%;
   max-height: 100%;
@@ -74,4 +103,50 @@
   color: #fff;
   left: 5%;
   top: 30%;
+}
+
+#link-button {
+  background: #02AAB0;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #01ffd6, #00CDAC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #01ffd6, #00CDAC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#link-button .link-button {
+  text-align: center;
+}
+
+#link-button .link-button a:hover {
+  text-decoration: none;
+}
+
+#link-button .link-button.product img {
+  background: #ff2d2d;
+}
+
+#link-button .link-button img {
+  width: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#link-button .link-button .caption {
+  margin-top: 10px;
+}
+
+#link-button .link-button .caption h2 {
+  font-weight: bolder;
+  color: #656565;
+  font-size: 5.375vw;
+}
+
+@media screen and (min-width: 500px) {
+  #link-button .link-button .caption h2 {
+    font-size: 18px;
+  }
 }
