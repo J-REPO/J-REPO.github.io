@@ -1,0 +1,31 @@
+$criteria_width: 640px;
+
+#activity-top {
+    background-size: cover;
+    background-image: url('/public/img/activity/top-background.jpg');
+    .activity-top-title {
+        margin-top: 10rem;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 0.5em;
+        border-bottom: 0.8px solid #444;
+        text-align: right;
+        h1.title {
+            color: black;
+            font-size: 6.375vw;
+            @media screen and (min-width: $criteria_width) {
+                font-size:36px;
+                line-height: 42px;
+            }
+        }
+    }
+}
+
+#activity-content {
+    background: #e91e63;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ff544c, #fd6678);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ff544c, #fd6678);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

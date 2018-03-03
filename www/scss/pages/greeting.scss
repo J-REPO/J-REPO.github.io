@@ -1,0 +1,32 @@
+#greeting-top {
+    background-image: url('/public/img/greeting/top-background.jpg');
+}
+
+#greeting-content {
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #00d2ff, #589eff);
+    background: linear-gradient(to right, #00d2ff, #589eff);
+    .content {
+        .director {
+            margin-bottom: 1em;
+            .director-content {
+                margin-top: 1em;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    max-width: 60%;
+                    border-radius: 40px;
+                    -webkit-border-radius: 40px;
+                    -moz-border-radius: 40px;
+                }
+                &.text {
+                    margin-top: 1em;
+                    p {
+                        text-align: right;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+}
