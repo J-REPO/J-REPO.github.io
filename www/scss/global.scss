@@ -1,36 +1,96 @@
 /* Font Setting */
+
 @import url(https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
-/******************/
+
 /* Global Setting */
-/******************/
 
+$criteria_width: 640px;
 body {
-  background: #FFF;
-  margin: 0px;
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
-  background: white;
+    background: #FFF;
+    margin: 0px;
+    font-family: 'Noto Sans Japanese', sans-serif, "Helvetica", "メイリオ";
+    background: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Noto Sans Japanese', sans-serif,"Helvetica","メイリオ";
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans Japanese', sans-serif, "Helvetica", "メイリオ";
 }
+
 /* それぞれのセクションのメインコンテンツについて */
-.main {    
-    background: rgba(255,255,255,0.2);
-    border-radius: 10px;
-}
-
 .section {
-  padding-top: 2%;
-  padding-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-hr.content-title {
-    border: 0;
-    height: 0;
-    margin-right:3em;
-    margin-left:3em;
-    border-top: 0.1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+.top {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-size: cover;
+    .title {
+        margin-top: 10rem;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-bottom: 0.5em;
+        border-bottom: 0.8px solid #505050;
+        text-align: right;
+        h1 {
+            color: #272727;
+            font-size: 6.375vw;
+            @media screen and (min-width: $criteria_width) {
+                font-size:36px;
+                line-height: 42px;
+            }
+        }
+    }
 }
+
+.main {
+    .contents {
+        background: rgba(255, 255, 255, 0.2);
+        padding-top: 2%;
+        padding-bottom: 2%;
+        @media (min-width: 767px) {
+            border-radius: 10px;
+            margin: 2em 0;
+        }
+        .content {
+            .title {
+                h2 {
+                    margin-top: 1em;
+                    margin-bottom: 0.8em;
+                    margin-left: 1em;
+                    font-weight: 600;
+                }
+            }
+            .caption {
+                width: 90%;
+                margin: 0 auto;
+                font-size: 1.1em;
+                p {
+                    text-indent: 1em;
+                }
+                a {
+                    color: #444;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@import "section/footer.scss";
+
+// Pages //
+
+@import "pages/about.scss";
+@import "pages/activity.scss";
+@import "pages/article.scss";
+@import "pages/greeting.scss";
+@import "pages/index.scss";
+@import "pages/news.scss";
