@@ -1,17 +1,37 @@
 extends ./template/_layout
 block vars
-  - var option = data.activity
-block css
-  link(href=option.directory + '/public/css/uikit.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
-  link(href=option.directory + '/public/css/section/activity/top.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/activity/content.css', rel='stylesheet', type='text/css')
-block js  
-  script(src='//code.jquery.com/jquery-1.11.0.min.js')
-  script(src=option.directory + '/js/uikit.js')
-  include ./template/script/_analytics
+  - var title = "活動内容 - 日本ロボット教育推進機構"
+  - var description = "日本ロボット教育推進機構(J-REPO)の活動について紹介しています。"
 block append body
-  include ./section/activity/top
-  include ./section/activity/content
-  include ./section/common/footer
+  #activity-top.top
+    .title
+      h1 活動内容
+  #activity-content.main
+    .uk-grid
+      .uk-width-large-1-6.uk-hidden-small
+      .uk-width-large-4-6.uk-width-small-1-1.contents
+        .content
+          .title 
+            h2 ロボット競技会(FRC)の広告及び普及活動
+          .caption
+            p
+              | FRC(正式名称：FIRST Robotics Competition)は米国のNPO法人FIRSTが開催している、高校生のための国際的なロボット競技会です。当法人は日本国内でのFRCの広告及び普及活動に努めております。当法人がこの大会を推薦する理由としましては、
+            ul
+              li ロボットの規格が大きく高校生にとって貴重な体験である
+              li ロボットを製作するだけに留まらず資金集めや広報といった活動が必須になるため、技術者になるための幅広いスキルを習得できる
+            p
+              | といったものが挙げられます。
+        .content
+          .title
+            h2 FRC参加チームの支援
+          .caption
+            p
+              | FRCへの日本からの参加には様々な壁があり、決して容易ではありません。それでも、１人でも多くの日本の高校生がこの大会へ参加して、多くのことを学んでほしい。そんな願いから当法人は、FRCへの参加を希望する高校生を応援して参ります。
+        .content
+          .title
+            h2 中学生及び高校生に対するロボット教育の推進
+          .caption
+            p
+              | 決してFRCへの参加支援だけが当法人の掲げる教育活動ではありません。中高生を対象とした工作教室や講演会などを、企業の皆様と協力しながら企画していきたいと考えております。
+      .uk-width-large-1-6.uk-hidden-small
+  include ./section/footer

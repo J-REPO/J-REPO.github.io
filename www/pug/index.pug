@@ -1,22 +1,66 @@
 extends ./template/_layout
-block vars
-  - var option = data.index
-block css
-  link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/global.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/index/top.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/index/link-button.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/index/news.css', rel='stylesheet', type='text/css')
-  link(href=option.directory + '/public/css/section/common/footer.css', rel='stylesheet',type='text/css')
+block append vars
+  - var title = "J-REPO - 日本ロボット教育推進機構"
+  - var description = "中高生へのロボット教育を推進する日本ロボット教育推進機構(J-REPO)公式サイトです。"
+block append css
   link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.css', rel='stylesheet', type='text/css')
   link(href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css', rel='stylesheet', type='text/css')
-block js
-  script(src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous")
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js")
+block append js
   script(src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.js")
-  include ./template/script/_analytics
 block append body
-  include ./section/index/top
-  include ./section/index/news
-  include ./section/index/link-button
-  include ./section/common/footer
+  #top.section
+    .uk-grid(data-uk-grid-margin=role!==1)
+      .uk-width-large-1-10.uk-hidden-small
+      .uk-width-large-8-10.uk-width-small-1-1
+        .top_img 
+          img(src='/public/img/jrepo-logo.png')
+        .top_caption
+          p.top_caption_text 日本ロボット教育推進機構は、中高生へのロボット教育を推進する一般社団法人です。   
+      .uk-width-large-1-10.uk-hidden-small
+  #news.section
+    .uk-grid
+      .uk-width-large-1-6.uk-hidden-small
+      .uk-width-large-4-6.uk-width-small-1-1
+        .section
+          div.uk-slidenav-position(data-uk-slideshow="{autoplay:true,animation:'random-fx'}")
+            ul.uk-slideshow.articles
+              each article in data.articles.slice(0,2)
+                li
+                  a(href=article.url + ".html")
+                    .uk-panel.uk-panel-box.article
+                      .uk-panel-teaser
+                        img.article_thumbnail(src=article.img_url)
+                      .article_caption
+                        .uk-flex.uk-flex-bottom.uk-flex-space-between
+                          div
+                            h2.title.uk-text-bold= article.article_title
+                          div.date
+                            h5.uk-text-right= article.date
+                        hr
+                        h4.description= article.description
+            a.uk-slidenav.uk-slidenav-contrast.uk-slidenav-previous(href="",data-uk-slideshow-item="previous")
+            a.uk-slidenav.uk-slidenav-contrast.uk-slidenav-next(href="",data-uk-slideshow-item="next")
+      .uk-width-large-1-6.uk-hidden-small
+  #link-button.section
+    .uk-grid
+      .uk-width-large-1-5.uk-hidden-small
+      .uk-width-large-1-5.uk-width-small-1-2.uk-width-1-2(data-uk-parallax="{ scale: '0.5,1.0',velocity: '0.5',viewport:'0.5'}")
+        .link-button
+          a(href="/about.html")
+            img.uk-border-circle(src="/public/img/link-button/about-button.png",alt="About")
+            .caption
+              h2 About
+      .uk-width-large-1-5.uk-width-small-1-2.uk-width-1-2(data-uk-parallax="{ scale: '0.5,1.0',velocity: '0.5',viewport:'0.5'}")
+        .link-button
+          a(href="/greeting.html")
+            img.uk-border-circle(src="/public/img/link-button/greeting-button.png",alt="Greeting")
+            .caption
+              h2 Greeting
+      .uk-width-large-1-5.uk-width-small-1-2.uk-width-1-2(data-uk-parallax="{ scale: '0.5,1.0',velocity: '0.5',viewport:'0.5'}")
+        .link-button.product
+          a(href="/activity.html")
+            img.uk-border-circle(src="/public/img/link-button/product-button.png",alt="Activity")
+            .caption
+              h2 Activity
+      .uk-width-large-1-5.uk-hidden-small
+  include ./section/footer
